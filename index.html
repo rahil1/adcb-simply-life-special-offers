@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="description" content="" />
+    <meta name="keywords" content="Special Offers" />
+    <title>Special Offers</title>
+    <link rel="canonical" href="http://www.simplylife.ae/special-offers/default.aspx" />
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="width" />
+    <link rel="stylesheet" type="text/css" href="systemrs/includes/css/font.css" />
+    <link rel="stylesheet" type="text/css" href="systemrs/includes/css/style.css" />
+    <script type="text/javascript" src="systemrs/includes/scripts/jquery-1.4.2.min.js"></script>
+    <script type="text/javascript" src="systemrs/includes/scripts/common.js"></script>
+    <script type="text/javascript" src="systemrs/includes/scripts/GeneralFunction.js"></script>
+    <script type="text/javascript" src="systemrs/includes/scripts/jquery.ADCBrating.js"></script>
+    <script type="text/javascript" src="https://c4c.phonon.in/Click2TalkForm/js/CallMeForm.js"></script>
+    <!--<script type="text/javascript" src="https://dev.phonon.in/KClick2VideoWidget/resources/js/CallMe.js"></script>-->
+    <script type="text/javascript">
+
+        //Captcha Refresh
+
+        function RefreshImage(valImageId) {
+
+            $("#MainContent_txtCaptchaApplyNow").val('');
+
+            $("#MainContent_txtCaptchaLeaveNumber").val('');
+
+            var objImage = document.getElementById(valImageId)
+
+            if (objImage == undefined) {
+
+                return;
+
+            }
+
+            var now = new Date();
+
+            objImage.src = objImage.src.split('?')[0] + '?x=' + now.toUTCString();
+
+        }
+
+
+
+        $(document).ready(function () {
+
+            //Main Navigation Active
+
+            var url = location.pathname;
+
+
+
+            $('#nav a[href="' + url + '"]').addClass('active');
+
+
+
+            var $activeUL = $('.active').closest('ul');
+
+            if ($activeUL.attr('id') != 'nav') {
+
+                $activeUL.parent().children('a').addClass('active');
+
+            }
+
+
+
+
+
+            //Tabs
+
+            $('#tab1').click(function () {
+
+                var div1Html = $('#myraterecap').html();
+
+                $('#myraterecap').html('')
+
+                $('#myrecap').html(div1Html);
+
+            });
+
+            $('#tab2').click(function () {
+
+                var div1Html = $('#myrecap').html();
+
+                $('#myrecap').html('')
+
+                $('#myraterecap').html(div1Html);
+
+            });
+
+
+
+
+
+            $('#MainContent_rblExistingCustomer_0').click(function () {
+
+                var txt = $('.inputRadioWrap span input:checked').parent().attr('class');
+
+                if (txt == 'yes') {
+
+                    $('.adcbID').show();
+
+                }
+
+            });
+
+
+
+            $('#MainContent_rblExistingCustomer_1').click(function () {
+
+                var txt = $('.inputRadioWrap span input:checked').parent().attr('class');
+
+                if (txt == 'no') {
+
+                    $('.adcbID').hide();
+
+                }
+
+            });
+
+
+
+
+
+            $('#MainContent_rblApplyNowYesNo_0').click(function () {
+
+                var txtApplyNow = $('#MainContent_rblApplyNowYesNo input:checked').parent().attr('class');
+
+                if (txtApplyNow == 'yes') {
+
+                    $('.adcbID').show();
+
+                }
+
+            });
+
+
+
+            $('#MainContent_rblApplyNowYesNo_1').click(function () {
+
+                var txtApplyNow = $('#MainContent_rblApplyNowYesNo input:checked').parent().attr('class');
+
+                if (txtApplyNow == 'no') {
+
+                    $('.adcbID').hide();
+
+                }
+
+            });
+
+
+
+
+
+            $("#MainContent_txtADCBID").ForceNumericOnly();
+
+            $("#MainContent_txtCustomerNumber").ForceNumericOnly();
+
+            $("#MainContent_txtApplyNowADCBID").ForceNumericOnly();
+
+            $("#MainContent_txtApplyNowMobile").ForceNumericOnly();
+
+            $("#MainContent_txtApplyNowRes").ForceNumericOnly();
+
+            $("#MainContent_txtApplyNowFax").ForceNumericOnly();
+
+            $("#MainContent_txtApplyNowOfficeNo").ForceNumericOnly();
+
+            $("#MainContent_txtApplyNowPOBox").ForceNumericOnly();
+
+
+
+        });
+
+
+
+        jQuery.fn.ForceNumericOnly =
+
+        function () {
+
+            return this.each(function () {
+
+                $(this).keydown(function (e) {
+
+                    var key = e.charCode || e.keyCode || 0;
+
+                    // allow backspace, tab, delete, enter, arrows, numbers and keypad numbers ONLY
+
+                    // home, end, period, and numpad decimal
+
+                    return (
+
+                        key == 8 ||
+
+                        key == 9 ||
+
+                        key == 13 ||
+
+                        key == 46 ||
+
+                        key == 110 ||
+
+                        key == 190 ||
+
+                        (key >= 35 && key <= 40) ||
+
+                        (key >= 48 && key <= 57) ||
+
+                        (key >= 96 && key <= 105));
+
+                });
+
+            });
+
+        };
+
+
+
+        function fnleaveyournumber() {
+
+            var txt = $('.inputRadioWrap span input:checked').parent().attr('class');
+
+            if (txt == 'yes') {
+
+                if (FieldIsNull($("#MainContent_txtADCBID"), "Enter Your ADCB ID")) {
+
+                    return false;
+
+                }
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_ddlProductName"), "Please select product")) {
+
+                return false;
+
+            }
+
+
+
+            if (!FieldIsNull($("#MainContent_txtCustomerNumber"), "Enter Contact Number")) {
+
+                if (CheckLength($("#MainContent_txtCustomerNumber"), 7, "Minimum", "digits")) {
+
+                    $("#MainContent_txtCustomerNumber").focus();
+
+                    return false;
+
+                }
+
+            }
+
+            else {
+
+                return false;
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_txtCaptchaLeaveNumber"), "Please Enter Captcha Value")) {
+
+                return false;
+
+            }
+
+
+
+        }
+
+
+
+        function fnapplyonlineform() {
+
+
+
+            var txt = $('.inputRadioWrap span input:checked').parent().attr('class');
+
+            if (txt == 'yes') {
+
+                if (FieldIsNull($("#MainContent_txtApplyNowADCBID"), "Enter Your ADCB ID")) {
+
+                    return false;
+
+                }
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_ddlAppplyNowProduct"), "Please select product")) {
+
+                return false;
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_txtApplyNowName"), "Enter Your Name")) {
+
+                return false;
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_txtApplyNowEmail"), "Enter Your Email")) {
+
+                return false;
+
+            }
+
+
+
+            if (!echeck($("#MainContent_txtApplyNowEmail").val())) {
+
+                return false;
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_ddlApplyNowEmirate"), "Please select Emirate")) {
+
+                return false;
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_txtApplyNowMobile"), "Enter Mobile Number")) {
+
+                return false;
+
+            }
+
+
+
+            if (CheckLength($("#MainContent_txtApplyNowMobile"), 7, "Minimum", "digits")) {
+
+                $("#MainContent_txtApplyNowMobile").focus();
+
+                return false;
+
+            }
+
+
+
+            if (!FieldIsNull($("#MainContent_txtApplyNowRes"), "")) {
+
+                if (CheckLength($("#MainContent_lblApplyNowRes"), 7, "Minimum", "digits")) {
+
+                    $("#MainContent_lblApplyNowRes").focus();
+
+                    return false;
+
+                }
+
+            }
+
+
+
+            if (!FieldIsNull($("#MainContent_txtApplyNowOfficeNo"), "")) {
+
+                if (CheckLength($("#MainContent_txtApplyNowOfficeNo"), 7, "Minimum", "digits")) {
+
+                    $("#MainContent_txtApplyNowOfficeNo").focus();
+
+                    return false;
+
+                }
+
+            }
+
+
+
+            if (!FieldIsNull($("#MainContent_txtApplyNowFax"), "")) {
+
+                if (CheckLength($("#MainContent_txtApplyNowFax"), 7, "Minimum", "digits")) {
+
+                    $("#MainContent_txtApplyNowFax").focus();
+
+                    return false;
+
+                }
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_ddlApplyNowService"), "Please select hear about Product/Service")) {
+
+                return false;
+
+            }
+
+
+
+            if (FieldIsNull($("#MainContent_txtCaptchaApplyNow"), "Please Enter Captcha Value")) {
+
+                return false;
+
+            }
+
+        }
+
+
+
+
+
+        function fnapplynowform() {
+
+            if (FieldIsNull($("#MainContent_txt_name_title"), "Enter Your Title")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_first_name"), "Enter Your First Name")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_last_name"), "Enter Your Last Name")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_email"), "Enter Your Email")) { return false; }
+
+            if (!echeck($("#MainContent_txt_email").val())) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_mobile"), "Enter Mobile Number")) { return false; }
+
+            if (FieldIsNull($("#MainContent_ddlApplyNowEmirate"), "Please select Emirate")) { return false; }
+
+            if (CheckLength($("#MainContent_txt_mobile"), 7, "Minimum", "digits")) { $("#MainContent_txt_mobile").focus(); return false; }
+
+            if (FieldIsNull($("#MainContent_txt_nationality"), "Enter Nationality")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_loan_purpose"), "Enter Loan Purpose")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_loan_amt"), "Enter Loan Amount")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_loan_tenure"), "Enter Loan Tenure")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_loan_option"), "Enter Loan Option")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_employer_name"), "Enter Employer Name")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_designation"), "Enter Designation")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_date_joining"), "Enter Date of Joining")) { return false; }
+
+            if (FieldIsNull($("#MainContent_txt_Captcha"), "Please enter the characters shown in the image")) { return false; }
+
+            return true;
+
+        }
+
+
+
+    </script>
+
+    <!-- New Scripts -->
+    <!-- JQUERY
+    ––––––––––––––––––––––––––––––––––––––––––––––––––
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css"> -->
+    <script src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/lightslider.js"></script>
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="css/dining-style2.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/lightslider.css" />
+    <style>
+        ul {
+            list-style: none outside none;
+            padding-left: 0;
+            margin: 0;
+        }
+
+        .demo a {
+            text-decoration: none;
+        }
+
+        .content-slider li {
+            list-style-image: none;
+            height: 180px !important;
+        }
+
+        .content-slider h3 {
+            margin: 0;
+            background-color: #231F64;
+            text-align: center;
+            color: #FFF;
+            border-radius: 100%;
+            padding: 50px 0;
+            display: none;
+        }
+
+        .content-slider p {
+            text-align: center;
+            margin-top: 5px;
+            color: #000;
+        }
+
+        .slider-container {
+            /*  padding: 40px 0 40px 0; */
+            display: block;
+            background: none;
+            max-width: 740px;
+            height: 240px;
+            margin: 0 auto;
+        }
+
+        #previous {
+            position: inherit;
+            right: 0px;
+            text-align: right;
+            padding-right: 30px;
+        }
+
+        #next {
+            position: inherit;
+            left: 0px;
+            text-align: left;
+            /*padding-left: 30px;*/
+        }
+
+        .down-arrow {
+            display: inline-block;
+            position: relative;
+        }
+
+            .down-arrow:after {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 50%;
+                top: 100%;
+                margin-top: -10px;
+                width: 0;
+                height: 0;
+                border-top: 10px solid orange;
+                border-right: 10px solid transparent;
+                border-bottom: 10px solid transparent;
+                border-left: 10px solid transparent;
+                display: none;
+            }
+    </style>
+    <!-- /New Scripts -->
+    <title></title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="overlay"></div>
+        <div class="headerWrapper clearfix">
+            <div class="header">
+                <div class="logo"> <a href="/default.aspx"> <img src="http://www.simplylife.ae/Images/logo-res.png" alt="SimplyLife" title="SimplyLife" /> </a> </div>
+                <div class="navigation">
+                    <div class="contactBand">
+                        <a href="/contactus/contact.aspx" class="contactImg"><span class="contactText">Contact US</span>&nbsp;<span class="contactNumber">600 545 545</span></a> <br />
+                        <div class="click-to-call">
+                            <img src="http://www.simplylife.ae/systemrs/images/icon-res.gif" width="43" height="43" /> <a href="javascript:;" onclick="callme( 'slhf099b' ,' PL ','' ,'http://www.simplylife.ae'); ga('send', { 'hitType': 'pageview', 'page': '/clik2talkfrom', 'title': 'Click2talkform' });">Click to Talk</a>
+                            <div class="clicknew"><img src="http://www.simplylife.ae/systemrs/images/new-res.png" /></div>
+                        </div>
+                    </div>
+                    <a href="javascript:;" class="mobileLink"> <img src="http://www.simplylife.ae/systemrs/images/menu-icon.gif" /> </a>
+                    <ul id="nav">
+                        <li class="subNavLink">
+                            <a href="javascript:;">About Us</a>
+                            <ul class="subNav">
+                                <li><a href='/about-us/default.aspx' title='Overview'>Overview</a></li>
+                                <li><a href='/about-us/media-centre.aspx' title='Media Centre'>Media Centre</a></li>
+                            </ul>
+                        </li>
+                        <li class="subNavLink">
+                            <a href="javascript:;">Loans</a>
+                            <ul class="subNav">
+                                <li><a href='/loans/personal-loan.aspx' title='Personal Loan'>Personal Loan</a></li>
+                                <li><a href='/loans/car-loan.aspx' title='Car Loan'>Car Loan</a></li>
+                                <li><a href='/loans/rental-loan.aspx' title='SimplyRental'>SimplyRental</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='/cards/credit-card.aspx' title='Cards'>Cards</a></li>
+                        <li><a href='/special-offers/default.aspx' title='Offers'>Offers</a></li>
+                        <li><a href='/articles/articles.aspx' title='Articles'>Articles</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Inner Content Start --
+
+        <link rel="stylesheet" type="text/css" href="systemrs/includes/css/owl.carousel.css"> -->
+        <link rel="stylesheet" type="text/css" href="systemrs/includes/css/simply-life-offers.css" />
+        <!-- <script type="text/javascript" src="systemrs/includes/scripts/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="systemrs/includes/scripts/owl.carousel.js"></script>
+        <script type="text/javascript">
+
+        $(document).ready(function()
+
+        {
+
+            var w = $(window).width();
+
+            if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) && (w<768)) {
+
+            $('#productOwlCarousel').prepend('')
+
+        }
+
+
+
+             var productCarousel = $("#productOwlCarousel");
+
+             productCarousel.owlCarousel({
+
+            items : 4, //10 items above 1000px browser width
+
+            //itemsDesktop : [1000,5], //5 items between 1000px and 901px
+
+            //itemsDesktopSmall : [900,3], // betweem 900px and 601px
+
+            itemsTablet: [640,3], //2 items between 600 and 0
+
+            pagination : false,
+
+            navigation : true,
+
+            navigationText : false,
+
+            rewindNav : false,
+
+            itemsMobile : [533,2]
+
+            });
+
+
+
+            // Custom Navigation Events
+
+            $(".next").click(function(){
+
+            productCarousel.trigger('owl.next');
+
+            })
+
+            $(".prev").click(function(){
+
+            productCarousel.trigger('owl.prev');
+
+            })
+
+
+
+            articleslhs();
+
+        });
+
+
+
+        </script>
+        -->
+        <div class="mainContainerWrapper clearfix">
+            <div class="mainContainer articlesBt clearfix">
+
+                <!--   Banner Content End -->
+
+                <div class="topBanner clearfix">
+                    <div class="innerBannerText"> <span class="txtStyle">Big savings</span> <span class="txtStyleBold">made simple</span> </div>
+                    <div class="innerBannerImg"><img src="http://www.simplylife.ae/Images/simply-life-special-offers.png" alt="" title="" /></div>
+                </div>
+
+                <!--   Banner Content End -->
+
+                <div class="contentContainerWrapper offersContent clearfix">
+                    <div class="contentContainer">
+                        <div class="innerContent">
+
+                            <!--  ===  start OwlCarousel ===== -->
+                            <!--  ===  end OwlCarousel ===== -->
+                            <!-- New Accordion Container -->
+
+                            <div class="slider-container">
+                                <div class="button-container" id="previous">
+                                    <a href="#" id="goToPrevSlide"><img src="Images/arrow-left.png"></a>
+                                </div>
+                                <div class="image-slider" id="image-slider">
+                                    <!-- slider goes here -->
+                                </div>
+                                <div class="button-container" id="next">
+                                    <a href="#" id="goToNextSlide"><img src="Images/arrow-right.png"></a>
+                                </div>
+                            </div>
+                            <a class="lSPrev" style="background-color:blue; width:10px; height: 10px;"></a>
+
+                            <div id="dialog" title="">
+                                <!-- Dialog -->
+                                <div class="btn close-btn"><a href="#" id="modalClose">X</a></div>
+                                <div class="modal-content" id="modal-content">
+                                    <!-- Modal Content -->
+
+                                    <table>
+                                        <tr>
+                                            <td valign="middle">
+                                                <h1 class="offer" id="popup_offer_name"></h1><br />
+                                                <p class="offercopy" id="popup_offer_copy"></p>
+                                            </td>
+                                            <td valign="top"><img class="popupHeaderImage" id="popup_offer_image" height="118px" src="" alt="" /></td>
+                                        </tr>
+                                    </table>
+                                    <div class="detailsLeft">
+                                        <h2 class="offer">Locations:</h2>
+                                        <ul id="popup_offer_locations">
+                                            <li class="detail">
+                                        </ul>
+                                    </div>
+                                    <div class="detailsRight">
+                                        <h2 class="offer">Validity:</h2>
+                                        <p id="popup_offer_validity"></p>
+                                    </div>
+                                    <div class="offerTerms">
+                                        <p class="termDetails">For more information, please call 600 545 545</p>
+                                        <p class="tnc-small-text"> Terms &amp; Conditions Apply</p>
+                                        <p id="popup_offer_terms"></p>
+                                    </div>
+                                    <div class="poweredBy">
+                                        <p>Powered by:</p>
+                                        <img id="popup_offer_image" src="img/super_saver_logo60.png">
+                                    </div>
+
+                                </div> <!-- End Modal Content -->
+                            </div> <!-- End Dialog -->
+                            <div class="detailContentainer">
+                                <div class="accordion-container">
+
+                                    <div class="accordion-expand-holder">
+                                        <a class="accordion-collapse-all" href="#">Collapse all<span class="icon-box"><span class="ui-icon ui-icon-minus"></span></span></a>
+                                        <a class="accordion-expand-all" href="#">Expand all<span class="icon-box"><span class="ui-icon ui-icon-plus"></span></span></a>
+                                    </div>
+
+                                    <div id="accordion" class="ui-accordion ui-widget ui-helper-reset"></div>
+                                </div>
+                            </div>
+
+
+                            <!-- /New Accordion Containder -->
+
+                        </div>
+                        <!-- end innerContent -->
+
+                    </div>
+                    <!-- end contentContainer -->
+
+                </div>
+                <!-- end articlesContent -->
+
+            </div>
+        </div>
+        <div class="supportLinkWrapper clearfix">
+            <div class="supportLink">
+                <ul>
+                    <li class="ftrIco1"><span> </span> <a href="/contactus/contact.aspx?1">Apply online</a></li>
+                    <li class="ftrIco2"><span> </span> <a href="mailto:simplylife@adcb.com">Email us</a></li>
+                    <li class="ftrIco3"><span> </span> <a href="/contactus/contact.aspx">Leave your number</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerWrapper clearfix">
+            <div class="footer">
+                <div class="fListBox">
+                    <p>Simplylife</p>
+                    <ul>
+                        <li><a href="/about-us/default.aspx">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="fListBox">
+                    <p>We Offer</p>
+                    <ul>
+                        <li><a href="/loans/car-loan.aspx">Car Loan</a></li>
+                        <li><a href="/loans/personal-loan.aspx">Personal Loan</a></li>
+                        <li><a href="/cards/credit-card.aspx">Credit Cards</a></li>
+                    </ul>
+                </div>
+                <div class="fListBox">
+                    <p>Calculate</p>
+                    <ul>
+                        <li><a href="/calculator/emi-calculator.aspx">EMI Calculator</a></li>
+                        <li><a href="/calculator/eligibility-calculator.aspx">Calculate Eligibility</a></li>
+                    </ul>
+                </div>
+                <div class="fListBox">
+                    <p>What's New</p>
+                    <ul>
+                        <li>Special Offers</li>
+                    </ul>
+                </div>
+                <div class="fListBox">
+                    <p>Support</p>
+                    <ul>
+                        <li><a href="/contactus/contact.aspx">Leave Your Number</a></li>
+                        <li><a href="/contactus/contact.aspx?1">Apply Online</a></li>
+                        <li><a href="mailto:simplylife@adcb.com">Email Us</a></li>
+                        <li><a href="javascript:;" onclick="callme( 'slhf099b' ,' PL ','' ,'http://www.simplylife.ae');">Click to Talk</a></li>
+                    </ul>
+                </div>
+                <div class="footerLogo"> <a href="http://www.adcb.com" target="_blank"> <img src="http://www.simplylife.ae/Images/adcblogo-res.jpg" title="adcblogo" alt="adcblogo" style="width: 90px; height: 30px;" /> </a> </div>
+            </div>
+        </div>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-50002867-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+
+        <!-- Javascript for new accordion
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <script type="text/javascript" src="simply-life-offers-data.json"></script>
+        <script type="text/javascript" src="./js/simply-life-offers.js"></script>
+        <script type="text/javascript">
+            $(document).ready(loadXMLOffers());
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,1415 @@
+/* Reset CSS */
+* {margin:0; padding:0;}
+ul li {list-style:none;}
+img {border:0;}
+a {text-decoration:none; color:#000;}
+body {font-size:62.5%; font-family:Arial, Helvetica, sans-serif; color:#000;}
+.clearfix:after {visibility:hidden; display:block; content:""; clear:both; height:0;}
+* html .clearfix {zoom:1;} /* IE6 */
+*:first-child+html .clearfix {zoom:1;} /* IE7 */
+.clear {clear:both;}
+
+/* Main Layout */
+.wrapper, .headerWrapper, .footerWrapper, .supportLinkWrapper, .makeStartWrapper, .productCarouselWrapper, .bannerCarouselWrapper, .contentContainerWrapper, .mainContainerWrapper {width:100%; /*overflow:hidden;*/}
+.header, .footer, .supportLink, .makeStart, .productCarousel, .bannerCarousel, .mainContainer {width:972px; margin:0 auto; clear:both;}
+.productCarousel, .bannerCarousel {width:820px;}
+
+/* Header */
+.headerWrapper {background:url(http://www.simplylife.ae/systemrs/images/body-bg.jpg) no-repeat center 0}
+.header {height:100px;}
+.logo {padding:24px 50px 0 0; float:left;}
+.navigation {float:left; position:relative; z-index:5}
+.contactBand {margin-left:26px; color:#fff; display:block; float:right; background:url(http://www.simplylife.ae/systemrs/images/contact-bg.png) no-repeat 0 -7px; width:169px; height:30px; font-size:13px; color:#fff; font-family:'museo_sans500';}
+.contactBand a {padding:7px 0 0 10px; float:left;color: #fff;}
+.mobileLink, .contactLink {display:none;}
+
+.navigation > ul {float:right;}
+.navigation > ul li {font-family:'museo_sans300'; float:left; padding-right:15px; font-size:1.6em; color:#000; position:relative; z-index:8;}
+.navigation ul li a {float:left; padding:55px 10px 26px 10px; color:#000;}
+.navigation ul li a:hover, .navigation ul li a.active {background:url(http://www.simplylife.ae/systemrs/images/nav-hover-bg.gif) repeat-x 0 0;}
+.navigation ul li ul {position:absolute; left:0; top:100px; background:#212165; display:none;}
+.navigation > ul > li:hover > ul  {display:block;}
+.navigation ul li a {float:left; padding:55px 10px 29px 10px; color:#000;}
+.navigation ul  li ul li {font-size:16px; padding-right:0; display:block; float:none; clear:both;}
+.navigation ul  li ul li a {padding:10px; width:130px; color:#fff;}
+.navigation ul  li ul li a:hover {color:#ffe106;}
+
+/* Banner Carousel */
+.bannerStyle {width:100%; min-height:220px; float:left; position:relative; z-index:4;}
+.img1 {float:left; padding-top:60px;}
+.img2 {float:right; padding-right:15px; padding-top:26px;}
+.banner3 {text-align:center; padding-top:60px;}
+.knwmoreLink {background-color:#FFE106; color:#212165; font-family:'museo_sans500'; font-size:1.8em; left:0; padding:7px; position:absolute; top:185px;}
+
+#bannerOwlCarousel .owl-controls {width:100px; margin:0 auto;}
+#bannerOwlCarousel .owl-controls .owl-page {display:inline-block; zoom:1; *display: inline; text-align:center;}
+#bannerOwlCarousel .owl-controls .owl-page span {display:block; width:11px; height:11px; margin:5px 7px; background:url(http://www.simplylife.ae/systemrs/images/banner-bullet.png) no-repeat 0 0;}
+#bannerOwlCarousel .owl-controls .owl-page.active span, .owl-theme .owl-controls.clickable .owl-page:hover span {background-position:right 0;}
+#bannerOwlCarousel .owl-controls .owl-page span.owl-numbers {height:auto; width:auto; color:#FFF; padding:2px 10px;}
+
+/* Product Carousel */
+.productCarousel p {font-size:1.6em; text-align:center; background:url(http://www.simplylife.ae/systemrs/images/down-arrow.png) no-repeat center bottom; padding:19px 0; margin-bottom:10px;}
+#productOwlCarousel {padding:0 0 33px 0; width:720px; margin:0 auto;}
+#productOwlCarousel .item {float:left; text-align:center;}
+#productOwlCarousel .item span.proText {display:block; font-size:1.6em; font-family:'museo_sans300'; color: #000000; padding:10px 0 0 0; text-align:center;}
+#productOwlCarousel .item span.proImage {float:left; *float:none; width:170px;}
+.proImage img {width:160px;}
+.owl-buttons {width:100%;}
+.owl-buttons div {top:74px; color:#FFF; display:inline-block; zoom:1; position:absolute; *display: inline; background:url(http://www.simplylife.ae/systemrs/images/prev-next-btn.png) no-repeat 0 0; width:21px; height:43px;}
+#productOwlCarousel .owl-controls {width:100%; position:absolute; left:0; top:0;}
+.owl-buttons div.owl-prev {left:-51px;}
+.owl-buttons div.owl-next {background-position:0 bottom; right:-51px;}
+.owl-buttons div.disabled {zoom:1; opacity:0.3; filter:alpha(opacity=30); cursor:default;}
+.mobileitem {display:none;}
+
+/* Inner Banner Area and Content */
+.topBanner {min-height:260px; position:relative;}
+.topBanner, .contentContainer {padding:0 70px; clear:both;}
+.innerBannerText {color:#212165; padding:50px 0; float:left; width:73%;}
+.specialOffersBT {padding:0;}
+.specialOffersBT .innerBannerText {width:72%;}
+.txtStyle, .txtStyleSlim {font-family:'museo_sans100';}
+.txtStyle, .txtStyleBold {font-size:4.8em;}
+.txtStyleBold {font-family:'museo_sans700'; display:block;}
+.txtStyleSlim {font-size:2.7em; padding:25px 0 0 0; display:block;}
+.innerBannerImg {float:right; position:relative; width:27%;}
+.innerBannerImg img {position:absolute; right:0; top:0; padding:7px 0 0 0;}
+.carLoanBT .innerBannerImg img {padding:62px 0 0 0;}
+.personalLoanBT .innerBannerText {width:100%; text-align:center;}
+.personalLoanBT .innerBannerText .txtStyleBold {display:inline}
+.innerBannerImg img.imgCredit {top:25px; right:-30px;}
+.mediaBT .txtStyle, .mediaBT .txtStyleBold {font-size:6.6em;}
+.mediaBT .innerBannerImg img {padding:116px 0 0 0;}
+
+.contentContainer {float:left; background:url(http://www.simplylife.ae/systemrs/images/content-bg.jpg) repeat-x 0 0;}
+.innerContent {padding:26px 5px 30px 5px; float:left; *width:85%;}
+.innerContent h1 {font-family:'museo_sans300'; font-size:2.5em; padding:0 0 15px 0; border-bottom:2px solid #fff; margin-bottom:25px; color:#212165; font-weight:normal;}
+.innerContent p, .innerContent ul li {font-size:1.3em; color:#000000; padding-bottom:20px;}
+.innerContent p.nopadding {padding:0;}
+.innerContent .tabContent ul.liststyle li {padding-bottom:10px;}
+.innerContent h3 {font-size: 2.4em; color:#212165; font-weight:normal;}
+.innerContent ul.liststyle li {background: url("/systemrs/images/black-bullet.png") no-repeat 0 2px; padding-left: 14px;}
+.innerContent .form .btn {width:116px;}
+.innerContent .form .btn, .linkbtn {line-height:13px; font-family:arial; margin:0; float:left; display:block; background:#ffe106; border:1px #212165 solid; text-align:center; font-size:13px; font-weight:bold; padding: 0 20px; height:30px; vertical-align:middle; color:#212165;  cursor:pointer;}
+.linkbtn {margin:0 0 0 10px; padding:8px 20px 0 20px; height:20px;}
+.specialOffersIC {width:50%; margin-top:-50px;}
+
+.tabContainer {clear:both; width:100%;}
+.productList {width:100%; padding:20px 0 10px 0;/* border-bottom:2px #fff solid;*/ margin-bottom:10px; }
+.productList li {padding:0 30px 0 0; width:100px; text-align:center; list-style:none; float:left;}
+.productList li a span {cursor:pointer; float:left; position:relative; width:100px; height:100px; display:block; margin-bottom:10px;}
+.productList li.tabSelected span {cursor:default;}
+.ico1 span {background:url(http://www.simplylife.ae/systemrs/images/benefits-icon.png) no-repeat 0 0;}
+.tabSelected a.ico1 span, .ico1:hover span {background:url(http://www.simplylife.ae/systemrs/images/benefits-icon-hover.png) no-repeat 0 0;}
+.ico2 span {background:url(http://www.simplylife.ae/systemrs/images/document-icon.png) no-repeat 0 0;}
+.tabSelected .ico2 span, .ico2:hover span {background:url(http://www.simplylife.ae/systemrs/images/document-icon-hover.png) no-repeat 0 0;}
+.ico3 span {background:url(http://www.simplylife.ae/systemrs/images/fees-icon.png) no-repeat 0 0;}
+.tabSelected a.ico3 span, .ico3:hover span {background:url(http://www.simplylife.ae/systemrs/images/fees-icon-hover.png) no-repeat 0 0;}
+.ico4 span {background:url(http://www.simplylife.ae/systemrs/images/faq-icon.png) no-repeat 0 0;}
+.tabSelected a.ico4 span, .ico4:hover span {background:url(http://www.simplylife.ae/systemrs/images/faq-icon-hover.png) no-repeat 0 0;}
+.detailContentainer .offerListItem .offerListRight{ width:60%;}
+
+/* LHS */
+.lhs {width:24%; float:left; margin-right:2px; border-right:2px #fff solid;}
+.lhs li {border-bottom:2px #fff solid; padding:6px 5px 6px 32px; background:#f1f1f1;}
+.lhs li a {background:none; display:block; font-size:1.4em; padding-left:15px;}
+.lhs li:hover {background:#ffe105;}
+.lhs li a:hover {color:#222165;}
+.lhs li.active {background:#222165;}
+.lhs li.active a {color:#ffe105; background:url(http://www.simplylife.ae/systemrs/images/bullet-lhs.png) no-repeat 0 2px;}
+
+.withLhs .contentContainer {padding:0 5px; width:74%; float:left; clear:none;}
+.withLhs .innerContent {padding:26px 40px 30px 45px;}
+
+/* Table Style*/
+.tblStyle {width:500px; clear:both; margin-bottom:30px; border-bottom:1px solid #000;}
+.tblStyle tr td, .tblStyle tr th {font-size:12px; border-top:1px solid #000; padding:5px; text-align:center; font-weight:bold;}
+.tblStyle tr td.alignLeftText, .tblStyle tr th.alignLeftText {text-align:left;}
+.tblStyle tr td.alignLeftText {font-weight:normal;}
+.innerContent .tblStyle ul li {font-size:12px; list-style:none; background:url(http://www.simplylife.ae/systemrs/images/black-bullet.gif) no-repeat 0 5px; padding:0 0 5px 10px;}
+.tblStyle ul {padding-left:0;}
+#tab3Content .smalltbl {width:38%;}
+/*#tab3Content .tblStyle.singleCol {width:75%;}*/
+.singleCol tr td {font-weight:normal; text-align:left; border-right:1px solid #000;}
+.singleCol .boldText {font-weight:bold; width:25%; border-left:1px solid #000; border-right:1px solid #000;}
+.cardTableStyle tr td, .singleCol tr td {font-weight:normal; text-align:left; border-right:1px solid #000;}
+.cardTableStyle .boldText, .singleCol .boldText {font-weight:bold; width:25%; border-left:1px solid #000; border-right:1px solid #000;}
+.cardTableStyle .boldText {width:42%;}
+
+.disBox {clear:both; padding:25px 0 0 0;}
+.disBox a {text-decoration:underline;}
+.disBox p {*float:none;}
+
+/*Contact */
+.contactTabContent {width:100%; float:left; clear:both; padding-top:20px;}
+.contactTabContent ul {text-align:center; padding-left:0;}
+.contactTabContent ul li {float:left; width:auto; font-size:18px; padding-bottom:0;}
+.contactTabContent ul li a {display:block; margin:0 5px 0 0; padding:5px 10px; background:#ddd; color:#000; text-decoration:none;}
+.contactTabContent ul li.tabSelected a {color:#fff; background:#212165;}
+.contactTabContent ul li a:hover {background:#ffe105; color:#222165;}
+.contactTabContent .tabContent {padding-top:15px; clear:both; *clear:none; width:100%; border-top:1px solid #000;}
+.contactTabContent .tabContent .form {padding-left:10px;}
+.contactTabContent .tabContent ul {width:100%; clear:both;}
+.contactTabContent .tabContent ul li {float:none; clear:both;}
+.innerContent .bulletContent li {background:url(http://www.simplylife.ae/systemrs/images/arrow-bullet.png) no-repeat 0 2px; padding:0 0 10px 12px;}
+.innerContent h4 {font-size:2em; font-family:'museo_sans300'; font-weight:normal; color:#212165; padding:10px 0;}
+
+/* Contact Form */
+.contactContainer .contentContainer {width:81%; padding: 0 90px 40px;}
+.emiContainer {width:86%;}
+.inputRow {float:left; clear:both; width:100%; padding:0 0 10px 0;}
+.inputRow.btnFields {padding:20px 0 10px 0;}
+.form label {width:230px; float:left; font-size:1.3em; clear:left; padding-top:3px;}
+.form input[type="text"], .form select {clear:right; float:left; border:1px solid #d1d1d1; padding:3px; line-height:25px;}
+.form input[type="text"] {width:193px; height:19px;}
+.form select {width:200px; height:25px;}
+.form .inputRadioWrap {float:left;}
+.form .inputRadioWrap input {width:15px; height:14px; float:left; margin-right:3px; border:none;}
+.form .inputRadioWrap span {float:left; margin-right:5px; padding-right:10px; font-size:1.1em;}
+.form .adcbID {display:none; padding:10px 0 0 0; clear:both;}
+.form img {margin-top:10px; float:left; max-width:152px;}
+.form .btn input {display:inline;}
+.form h4 {color:#212165; font-size:1.6em; font-weight:normal; width:100%; clear:both;}
+.contactTabContent .form input.resetBtn {width:70px; padding:10px 0 0 0; background:none; border:none; border-bottom:1px solid #212165; height:auto; margin:0 0 0 10px; padding:12px 0 3px 0\0;}
+.form .btn {width:116px;}
+.form .btn, .linkbtn {line-height:13px; font-family:arial; margin:0; float:left; display:block; background:#ffe106; border:1px #212165 solid; text-align:center; font-size:13px; font-weight:bold; padding: 0 20px; height:30px; vertical-align:middle; color:#212165;  cursor:pointer;}
+.linkbtn {margin:0 0 0 10px; padding:8px 20px 0 20px; height:20px;}
+
+/* FAQ Accordian */
+.expandLink, .collapseLink {float:left; padding:0 0 0 22px; font-size:14px; color:#000; margin:0 15px 15px 0;}
+.expandLink {background:url(http://www.simplylife.ae/systemrs/images/expand-all-icon.gif) no-repeat 0 0;}
+.collapseLink {background:url(http://www.simplylife.ae/systemrs/images/collapse-all-icon.gif) no-repeat 0 0;}
+.faqAccordian {width:97%;}
+.innerContent .faqAccordian h3 {background:url(http://www.simplylife.ae/systemrs/images/black-bullet.png) no-repeat 0 center; line-height:12px; padding:0 0 0 22px; font-weight:bold; font-family:arial; height:auto; clear:both; color:#000; cursor:pointer; font-size:12px; margin-bottom:18px; width:100%;}
+.faqAccordianContent {display:none; float:left; padding:0 0 10px 22px; width:98%; color:#000;}
+.faqAccordianContent p {font-size:12px;}
+.faqAccordianContent ul li {background:url(http://www.simplylife.ae/systemrs/images/black-bullet.gif) no-repeat 0 4px; font-size:12px; padding:0 0 5px 10px;}
+.linkStyle {text-decoration:underline;}
+
+/* Rate Box */
+.rateBox, .bottomBanner {width:100%; clear:both; border-top:3px solid #f1f1f1; margin-top:22px; float:left; padding:28px 0 0 0;}
+.rateBox h4 {font-size:18px; font-weight:normal; padding-bottom:37px;}
+.rateBox .rBox1, .rateBox .rBox2 {float:left; width:26%; text-align:center; margin-right:94px;}
+.rateBox  p {padding-bottom:16px;}
+.rateBox .rBox2 {width:18%; *width:19%;}
+.rateStar {width:100%; clear:both;}
+.rateBox .rating li {float:left; margin-right:5px; display:inline; width:25px; height:24px;}
+.rating li a {background:url(http://www.simplylife.ae/systemrs/images/star.png) no-repeat -31px 0; text-indent:-999em; display:block; width:25px; height:24px;}
+.rating li.active a, .rating li.selected a {background-position:0 0}
+.ratingText {margin:0 auto; font-family:'museo_sans300'; font-size:36px; text-align:center; background:url(http://www.simplylife.ae/systemrs/images/rating-yellow-circle.png) no-repeat 0 0; width:98px; height:66px; display:block; clear:both; padding-top:33px;}
+#div_Rated {font-size:1.2em; text-align:left; clear:both;}
+.crossMark {display:inline-block; font-size:1.3em; color:#000;}
+
+/*Credit Card */
+.textBanner {position:relative;}
+.textItem {position:absolute; display:none;}
+
+/* Make a Start */
+.makeStartWrapper {background:url(http://www.simplylife.ae/systemrs/images/makeStart-bg.jpg) no-repeat center 0; height:255px; text-align:center;}
+.makeStart p {font-size:2.4em; text-align:center; font-family:'museo_sans300'; color:#212165; padding:25px 0 16px 0; clear:both;}
+.makeStart ul li {width:138px; padding-right:33px; height:129px; display:block; float:left; font-size:1.6em; color:#000; text-align:center;}
+.makeStart ul li a { padding-bottom:8px; float:left; width:100%;}
+.makeStart ul li span {width:100%; height:129px; display:block; float:left; margin-bottom:12px;}
+.makeStart ul li.banIco1 span {background:url(http://www.simplylife.ae/systemrs/images/cal-emi-icon.png) no-repeat 0 0;}
+.makeStart ul li.banIco2 span {background:url(http://www.simplylife.ae/systemrs/images/apply-online-icon.png) no-repeat 0 0;}
+.makeStart ul li.banIco3 span {background:url(http://www.simplylife.ae/systemrs/images/leave-number-icon.png) no-repeat 0 0;}
+.makeStart ul li.banIco4 span {background:url(http://www.simplylife.ae/systemrs/images/Click-to-call-icon.png) no-repeat 0 0;}
+
+.makeStart ul li.banIco1:hover span {background:url(http://www.simplylife.ae/systemrs/images/cal-emi-icon-hover.png) no-repeat 0 0;}
+.makeStart ul li.banIco2:hover span {background:url(http://www.simplylife.ae/systemrs/images/apply-online-icon-hover.png) no-repeat 0 0;}
+.makeStart ul li.banIco3:hover span {background:url(http://www.simplylife.ae/systemrs/images/leave-number-icon-hover.png) no-repeat 0 0;}
+.makeStart ul li.banIco4:hover span {background:url(http://www.simplylife.ae/systemrs/images/Click-to-call-icon-rollover.png) no-repeat 0 0;}
+
+.makeStart ul li.lastLi {padding-right:15px;}
+
+/* EMI Calculator */
+/*-- ================================  start calc-wrapper =========================== */
+.pB10{ padding-bottom:10px !important;}
+.loanType div, .salaryBlock .arrow, .yellowBand .plusMinus, .calc-wrapper .ui-state-default, .calc-wrapper .label .icon, .AED-field .selectVal{ background:url(http://www.simplylife.ae/systemrs/images/sprite.png) no-repeat 0 0;}
+.calcBox {width:625px; padding:30px 0 0 0; clear:both; margin:0 auto; }
+.calcBox h1 {float:left; font-family:'museo_sans100'; font-size:48px; line-height:48px; color:#212165; padding-right:80px; border-bottom:none;}
+.calcBox h1 span {font-family:'museo_sans700'; color:#212165; padding-left:5px; }
+.loanType{ float:right; padding-top:12px;}
+.loanType div{font-size:1.8em; color:#fff; float:left; padding:3px 0; text-align:center; font-family: 'museo_sans300'; background:#cbcbcb; cursor:pointer;}
+.loanType .personalType{ width:133px;  /*background-position: 0 -3px;*/ border-radius:5px 0 0 5px;}
+.loanType .carType{ width:81px; /*background-position: -135px -3px;*/ border-radius:0 5px 5px 0;}
+.loanType div.active{background:#212165;}
+
+.calc-wrapper {background:url(http://www.simplylife.ae/systemrs/images/dotted-line.png) repeat-x 0 bottom; width:100%;  clear:both; padding:10px 0; margin-bottom:40px;}
+.calc-wrapper .applyNow {margin:0 0 0 284px; background:#cfcfcf; opacity:0.2; cursor:default; clear:both;}
+.calc-wrapper .applyNow.active {background:#ffe106; opacity:1; cursor:pointer;}
+.field {width:170px; height:36px; border:1px solid #d1d1d1; background:#fff; font-size:1.4em; color:#000000; float:right; margin-top:-5px;}
+.field .val {font-family: 'museo_sans300'; font-size:1.6em; float:right; padding:8px 12px 0 0;}
+.field .text {padding:15px 0 0 7px; float:left;}
+.row2 .field .val {float:left; padding:8px 0 0 12px;}
+.row2 .field .text {float:right; padding:15px 8px 0 0;}
+.slider {float:left; width:425px; background:url(http://www.simplylife.ae/systemrs/images/slider-bg-2.png) no-repeat 0 2px; clear:both;}
+.row2 .slider {background:url(http://www.simplylife.ae/systemrs/images/slider-bg-2.png) no-repeat 0 2px;}
+.calc-wrapper .row3 .label {clear:none; width:43%;}
+
+.calc-wrapper .row {padding:5px 0; clear:both;}
+.calc-wrapper .label {width:98%; clear:both;}
+.calc-wrapper .label .icon {width:64px; height:64px; background-position:-6px -82px; float:left;}
+.calc-wrapper .label .icon.month {background-position:-86px -82px;}
+.calc-wrapper .label .icon.salary {background-position:-167px -82px;}
+.calc-wrapper .label span {font-size:1.8em; color:#212165; font-family: 'museo_sans500'; float:left; padding:20px 0 0 6px; display:block;}
+.calc-wrapper .row2 .values ul {padding:17px 0 0 0;}
+.calc-wrapper .row2 .values li {font-family: 'museo_sans500'; color:#1f1f1f; font-size:1.4em; float:left; width:auto; padding:0 97px 0 3px;}
+.calc-wrapper .row2 .values li.last {padding:0;}
+.calc-wrapper .row2 .values li.first {padding:0 45px 0 2px;}
+.calc-wrapper .row2 .values.car li {padding:0 71px 0 2px;}
+.calc-wrapper .row2 .values.car li.first {padding:0 34px 0 2px;}
+.calc-wrapper .row2 .values.car li.last {padding:0 0 0 1px;}
+
+.calc-wrapper .row3 {width:415px;}
+.AED-field .selectVal {width:185px; height:28px; border:1px solid #d1d1d1; padding:7px 35px 0px 10px; font-size:1.6em; color:#4c4b4b; background-position:189px -154px;}
+.AED-field select {width:231px; height:38px; position:absolute; top:12px; opacity:0; filter:alpha(opacity=0);}
+.AED-field select option {font-size:1.1em; color:#4c4b4b; padding:8px 13px}
+.row3 .label {float:left;}
+.row3 .AED-field {float:right; position:relative; padding-top:12px;}
+
+#idAMT, #idTen {background:#fff; font-size:1.4em; color:#000000; font-family: 'museo_sans300'; border:none;}
+#idAMT {padding:10px 10px 0 0px; float:right; width:105px; text-align:right;}
+#idTen {padding:10px 0px 0 10px; float:left; width:50px; }
+
+/*-- ================================  end calc-wrapper =========================== */
+
+
+/*-- ================================  start salaryBlock =========================== */
+.salaryBlock {display:none;}
+.salaryBlock .block {float:left; width:300px; border:1px solid #d1d1d1; margin-bottom:10px;}
+.salaryBlock h2 {font-size:2.5em; color:#212165; border:0; font-family: 'museo_sans300'; height:auto; line-height:25px; padding:0 0 15px 0; margin:0;}
+.salaryBlock .title {background:#212165; font-size:2.2em; color:#fff; font-family: 'museo_sans700'; text-align:center; padding:4px 0; height:28px;}
+.salaryBlock .arrow {width:20px; height:13px; background-position:-4px -42px; display:block; clear:both; margin:0 auto;}
+.salaryBlock p {padding:5px 15px; font-size:1.8em;  font-family: 'museo_sans500'; width:80%}
+.salaryBlock p span {font-size:1.1em; font-family: 'museo_sans300';}
+.salaryBlock .grey {background:#dfdfdf; color:#2a2a2a; font-size:1.8em; font-family: 'museo_sans500'; clear:both; text-align:center; padding:8px 0;}
+.applyNow {background:#ffe106; color:#212165; font-size:1.8em; font-family: 'museo_sans700'; padding:5px 0; border:1px solid #212165; width:130px; text-align:center; margin:24px auto; cursor:pointer;}
+.salaryBlock .block.mL15 {margin-left:15px; float:right;}
+.yellowBand {background:#ffe106; color:#212165; font-size:1.4em; font-family: 'museo_sans300'; height:31px; padding:0 15px; line-height:30px; position:relative; margin-bottom:20px}
+.yellowBand .plusMinus {width:14px; height:14px; background-position: -7px -59px; position:absolute; top:9px; right:6px;}
+/*-- ================================  end salaryBlock =========================== */
+
+/* start slider */
+#slider-range-min, #slider-range-min2, #slider-month{ margin:10px 8px 0;}
+
+.ui-widget { font-family: Verdana, Arial, sans-serif; font-size: 1.1em; }
+.ui-slider-horizontal {height:4px; width:95%;}
+.ui-slider { position: relative; text-align: left; }
+/*.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background:#333; border: 1px solid #333; color: #555555; font-weight: normal; }*/
+.ui-state-default { background-position:-33px -41px}
+
+.ui-slider-horizontal .ui-slider-handle { margin-left: -0.6em; top: -0.5em; }
+.ui-slider .ui-slider-handle { cursor:pointer; height: 25px; position: absolute; width: 12px; z-index: 2; top:-8px;}
+.ui-slider-horizontal .ui-slider-range-min { left: 0; }
+.ui-slider-horizontal .ui-slider-range { height: 100%; top: 0; }
+.ui-slider .ui-slider-range {border: 0 none; display: block; font-size: 0.7em; position: absolute; z-index: 1; }
+.ui-widget-header { border-radius:3px;}
+.values .min,.values .max{ color:#636363; font-size:1.2em; padding-top:20px; font-weight:bold;}
+.values .min{ float:left;}
+.values .max{ float:right; padding-right:5px;}
+/* end slider */
+
+/* Media Center */
+.mediaContainerWrapper .innerContent h1 {border-bottom:2px solid #ffe106; clear:both;}
+.mediaContainerWrapper .owl-carousel {margin:auto; width:692px; margin-bottom:40px;}
+.mediaContainerWrapper #printAdCarousel, .mediaContainerWrapper #onlineAdCarousel {width:80%;}
+.mediaContainerWrapper #onlineAdCarousel {margin-top:85px;}
+.mediaContainerWrapper .contentContainer {padding:21px 42px 0 42px; width:98%;}
+.mediaContainerWrapper .contentContainer .innerContent {width:96%; padding:2%}
+.radioBannerCarousel .owl-carousel .owl-item {position:relative;}
+.mediaContainerWrapper .owl-buttons div {top:50%;}
+.mediaContainerWrapper .bottom-banners .owl-buttons div.owl-prev {left:-21px;}
+.mediaContainerWrapper .bottom-banners .owl-buttons div.owl-next {right:-21px;}
+.mediaContainerWrapper .radioBannerCarousel .owl-carousel .owl-buttons div {top:23%;}
+.radioBannerCarousel .tabContainer,.videoWrapper .langTabContainer {width:41%; text-align:center; clear:both; margin:0 auto;}
+.radioBannerCarousel .tabContainer ul,.videoWrapper .langTabContainer ul {padding:0 0 40px 0; float:left;}
+.radioBannerCarousel .tabContainer ul li,.videoWrapper .langTabContainer ul li {color:#212165; font-size:16px; font-family: 'museo_sans300'; float:left; width:94px; height:23px; text-align:center; padding:3px 0 0 0;}
+.radioBannerCarousel .tabContainer ul li a,.videoWrapper .langTabContainer ul li a {color:#212165; font-size:16px; font-family: 'museo_sans300'; float:left; width:94px; height:23px; text-align:center; padding:3px 0 0 0;}
+.radioBannerCarousel .tabSelected a,.videoWrapper .langTabContainer .langTabSelected a {background:url(http://www.simplylife.ae/systemrs/images/active-icon-big.png) no-repeat center 0;}
+.innerContent .videoTitle {position:absolute; left:138px; top:15px; font-size:18px; font-family:'Myriad Pro';}
+.active .videoTitle {z-index:2;}
+#tvcCarousel1 iframe,#tvcCarousel2 iframe,#tvcCarousel3 iframe,#generictvcCarousel1 iframe,#generictvcCarousel2 iframe,#generictvcCarousel3 iframe {width:690px; height:446px;}
+.bottom-banners,.tvcWrap,.radioSpotWrap {width:100%; float:left}
+.OnlineBanner, .printBanner {width:45%; text-align:center;}
+.OnlineBanner {float:left; margin-right:90px}
+.printBanner {float:left;}
+.mediaCenterMenu{ width:100%; float:left; background:#ffe106; padding:8px 0}
+.mediaCenterMenu ul,.mediaCenterMenu ul li{ float:left}
+.mediaCenterMenu ul{ width:100%}
+.mediaCenterMenu ul li{ font-size:1.6em; width:20%; color:#212165; text-align:center;}
+.mediaCenterMenu ul li a{ padding:2px 20px; border:1px solid transparent}
+.mediaCenterMenu ul li.sel a{ border:1px solid #212165}
+.marg0{ margin:0 auto; float:none}
+
+/*Box sizing*/
+.mediaCenterMenu ul,.mediaCenterMenu ul li{
+  -webkit-box-sizing: border-box; /* Safari 3.0 - 5.0, Chrome 1 - 9, Android 2.1 - 3.x */
+  -moz-box-sizing: border-box;    /* Firefox 1 - 28 */
+  box-sizing: border-box;         /* Safari 5.1+, Chrome 10+, Firefox 29+, Opera 7+, IE 8+, Android 4.0+, iOS any */
+}
+
+
+/*Support Links*/
+.supportLinkWrapper {background-color:#c6c6c6; height:51px; text-align:center;}
+.supportLink ul, .makeStart ul {display:inline-block; zoom: 1; *display: inline;}
+.supportLink ul li {float:left; padding:0 55px 0 0; margin-top:10px; font-family:'museo_sans300';}
+.supportLink ul li span {display:block; padding:0 0 0 19px; float:left; padding:0 0 28px 40px; background:url(http://www.simplylife.ae/systemrs/images/supportLink-sprite.png) no-repeat 0 0}
+.supportLink ul li a {float:left; font-size:1.6em; margin-top:7px;}
+.supportLink ul li.ftrIco1 span {background-position:0 0;}
+.supportLink ul li.ftrIco2 span {background-position:0 -48px;}
+.supportLink ul li.ftrIco3 span {background-position:0 -87px;}
+
+/* Footer */
+.footerWrapper {padding-top:22px;}
+.fListBox {width:17%; float:left; font-family:'museo_sans300'; font-size:1.4em;}
+.fListBox p {font-weight:bold; padding-bottom:12px;}
+.fListBox ul li {padding-bottom:10px; list-style:none;}
+.footerLogo {float:right; width:auto;}
+.logoLink {display:block; margin-bottom:10px;}
+.socialLink {margin-left:8px; float:left;}
+
+/* PLAYER */
+.audioplayer {height:117px; color:#000; position:relative; z-index:1; background:#f0eaf0;}
+.audioplayer-mini {width:2.5em; margin:0 auto;}
+.audioplayer > div {position:absolute;}
+.audioplayer-playpause {width:115px; height:100%; text-align:left; text-indent:-9999px; cursor:pointer; z-index:2; top:0; left:0; background:url(http://www.simplylife.ae/systemrs/images/player-btn-bg.jpg) no-repeat 0 0;}
+.audioplayer:not(.audioplayer-mini) .audioplayer-playpause {border-right:1px solid #555; border-right-color:rgba( 255, 255, 255, .1 );}
+.audioplayer-mini .audioplayer-playpause {width: 100%;}
+.audioplayer-playpause a {display: block;}
+.audioplayer-stopped .audioplayer-playpause a {width:0; height:0; border-left: 1em solid #000; border-top: 1em solid rgba(255,255,255,0); border-bottom: 1em solid rgba(255,255,255,0); content:''; position:absolute; top:50%; left:50%; margin:-0.5em 0 0 -0.25em; -moz-border-top-colors:rgba(255,255,255,0); -moz-border-bottom-colors:rgba(255,255,255,0);}
+.audioplayer-playing .audioplayer-playpause a {width:0.75em; height:1.75em; position:absolute; top:50%; left:50%; margin:-0.375em 0 0 -0.375em;}
+.audioplayer-playing .audioplayer-playpause a:before, .audioplayer-playing .audioplayer-playpause a:after {width:40%; height:100%; background-color:#000; content:''; position:absolute; top:0;}
+.audioplayer-playing .audioplayer-playpause a:before {left:0;}
+.audioplayer-playing .audioplayer-playpause a:after {right:0;}
+.audioplayer-time {width:auto; font-size:15px; line-height:15px; text-align:center; z-index:2; top:85px; color:#000;}
+.audioplayer-time-current {left:22.5em;}
+.audioplayer-time-duration {display:none; right:2.5em;}
+.audioplayer-novolume .audioplayer-time-duration {border-right:0; right:0;}
+.audioplayer-bar {height: 0.775em; background-color:#c9bccb; cursor:pointer; z-index:1; top:50%; right:11.875em; left:13.875em; margin-top:-0.438em;}
+.audioplayer-novolume .audioplayer-bar {right:4.375em;}
+.audioplayer-bar div {width:0; height:100%; position:absolute; left:0; top:0;}
+.audioplayer-bar-loaded {background-color:#c9bccb; z-index:1;}
+.audioplayer-bar-played {background:#181759; z-index:2;}
+.audioplayer-volume {width:89px; height: 100%; border-left:1px solid #111; border-left-color:#000; text-align:left; text-indent:-9999px; cursor:pointer; z-index:2; top:0; right:0;}
+.audioplayer-volume-button {width:100%; height:100%;}
+.audioplayer-volume-button a {background:url(http://www.simplylife.ae/systemrs/images/volume.png) no-repeat 0 0; width:10px; height:20px; display:block; position:relative; z-index:1; top:40%; left:35%;}
+.audioplayer-volume-button a:before,.audioplayer-volume-button a:after {content:''; position: absolute;}
+.audioplayer:not(.audioplayer-muted) .audioplayer-volume-button a:after {width:10px; height:10px; border:2px double #000; border-width: 2px 2px 0 0; left:8px; top:4px; -webkit-border-radius: 0 0.938em 0 0; -moz-border-radius: 0 0.938em 0 0; border-radius:0 0.938em 0 0; -webkit-transform: rotate( 45deg ); -moz-transform: rotate(45deg); -ms-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg);}
+.audioplayer-mini {display/*\**/: none\9; }
+
+/* volume dropdown */
+.audioplayer-volume-adjust {cursor:default; position:absolute; left:52px; top:36px;}
+.audioplayer-volume:not(:hover) .audioplayer-volume-adjust {opacity:0;}
+/*.audioplayer-volume:hover .audioplayer-volume-adjust {top:auto; bottom:88%;}*/
+.audioplayer-volume-adjust > div {width:34px; height:22px; background-color:#999; cursor:pointer; position:relative; z-index:1; margin:30% auto 0;}
+.audioplayer-volume-adjust div div {width:100%; height:100%; position:absolute; bottom:0; left:0; background:#333;}
+.audioplayer-novolume .audioplayer-volume {display:none;}
+
+/* Eligibility Calculator */
+.eliCalc .contentContainer {background:none; padding:0;}
+.eliCalc .innerContent {width:99%;}
+.eliCalc h1 {text-align:center; font-size:20px; border-bottom:none; margin-bottom:0;}
+.eliCalc h1 span {font-family:'museo_sans500';}
+.eligibiltyCalcContainer {width:100%;}
+.ecbox1 {background:url(http://www.simplylife.ae/systemrs/images/yellow-circle.png) no-repeat 0 0; width:354px; height:445px; float:left}
+.ecbox2 {background:url(http://www.simplylife.ae/systemrs/images/bubble.png) no-repeat 0 0; width:499px; height:445px; float:left; position:relative;}
+.ecScreen {width:90%; margin:0 50px; display:none;}
+.ec-screen3 {margin:0; float:left; clear:both; background:url(http://www.simplylife.ae/systemrs/images/yellow-oval.png) no-repeat 0 0; width:923px; height:444px;}
+.ec-screen3 .ecbox1 {background:none; width:246px; height:auto;}
+.ec-screen3 .ecbox2 {background:none; width:677px; height:auto;}
+.ecScreen .ecbox1 img {position:relative; top:70px;}
+.ec-screen1 .ecbox1 img, .ec-screen5 .ecbox1 img {left:122px;}
+.ec-screen2 .ecbox1 img, .ec-screen4 .ecbox1 img, .ec-screen6 .ecbox1 img, .ec-screen8 .ecbox1 img {left:175px;}
+.ec-screen3 .ecbox1 img {left:40px;}
+.ec-screen7 .ecbox1 img, .ec-screen9 .ecbox1 img {left:81px; z-index:2;}
+.ecbox2Content {padding:108px 0 0 160px; width:268px;}
+.ec-screen3 .ecbox2Content {padding:26px 0 0 0; width:100%;}
+.ec-screen4 .ecbox2Content {width:315px; text-align:center; padding:108px 0 0 121px;}
+.ec-screen5 .ecbox2Content {padding:44px 0 0 134px; text-align:center; width:296px;}
+.ec-screen6 .ecbox2Content {padding:65px 0 0 134px; text-align:center; width:279px;}
+.ec-screen7 .ecbox2Content, .ec-screen9 .ecbox2Content {width:378px; padding:62px 0 0 96px;}
+.ec-screen8 .ecbox2Content {text-align:center; width:340px; padding:95px 0 0 114px;}
+.innerContent .titleStyle1, .innerContent .titleStyle2 {line-height:30px; color:#212165;}
+.innerContent .titleStyle1, .innerContent .titleStyle7 {font-size:54px; font-family:'museo_sans700'; padding-bottom:16px;}
+.innerContent .titleStyle2 {font-size:32px; font-family:'museo_sans300'; padding-bottom:12px;}
+.innerContent .titleStyle3 {font-size:16px; color:#000000; width:233px; text-align:center; line-height:18px;}
+.innerContent .titleStyle4, .innerContent .titleStyle5 {font-size:27px; color:#212165;}
+.innerContent .titleStyle5 {font-size:25px; font-family:'museo_sans300';}
+.innerContent .titleStyle5 span {font-family:'museo_sans700';}
+.innerContent .titleStyle6 {font-size:18px; font-family:'museo_sans300'; color:#212165; padding-top:10px; clear:both;}
+.innerContent .titleStyle7 {font-size:36px; padding-bottom:0px; color:#212165;}
+.innerContent .titleStyle8 {font-size:24px; padding-bottom:5px; color:#212165; font-family:'museo_sans700';}
+.innerContent .titleStyle9 {font-size:20px; padding-bottom:10px; color:#212165; font-family:'museo_sans300';}
+.innerContent .titleStyle9.termsConditions{font-size: 13px;width: 266px;margin-left: 5px;padding-left: 10px;}
+.innerContent .ec-screen6  .titleStyle9 {width:250px;}
+.innerContent .titleStyle10 {font-size:48px; color:#212165; font-family:'museo_sans700'; padding-bottom:15px;}
+.innerContent .titleStyle11 {font-size:18px; color:#212165; font-family:'museo_sans700'; padding-bottom:5px;}
+.innerContent .titleStyle12 {font-size:30px; font-family:'museo_sans700'; padding-bottom:5px; color:#212165; padding-bottom:20px; text-align:center;}
+.innerContent .ec-screen7 .titleStyle12, .innerContent .ec-screen9 .titleStyle12 {text-align:left; margin-left:48px;}
+.innerContent .nopaddingtilte {padding:0;}
+.ec-screen7 .innerContent .titleStyle9, .ec-screen9 .innerContent .titleStyle9 {padding-bottom:5px; line-height:24px;}
+.innerContent p.titleStyle9 span {font-size:20px; font-family:'museo_sans700'; font-weight:bold;}
+.innerContent .titleStyle13 {font-size:24px; font-family:'museo_sans300'; padding-bottom:5px; clear:both;}
+.innerContent .titleStyle13 span.strongText {font-family:'museo_sans700';}
+.innerContent .termStyle3 {font-size:10px; padding-bottom:10px;  color:#212165;}
+
+
+.navCalcBtn {right:57px; background:url(http://www.simplylife.ae/systemrs/images/small-blue-circle.png) no-repeat 0 0; width:77px; height:76px; position:absolute; bottom:0; text-align:left;}
+.secnavBtn {right:0px; bottom:54px;}
+.navCalcBtn a {background:url(http://www.simplylife.ae/systemrs/images/small-yellow-bullet.png) no-repeat 91% 55%; font-size:18px; color:#ffe106; font-family:'museo_sans700'; padding:30px 15px 0 15px; width:45px; height:44px; display:block;}
+.ec-screen6 .navCalcBtn a, .ec-screen7 .navCalcBtn a, .ec-screen9 .navCalcBtn a, .ec-screen8 .navCalcBtn a.submitbtn {background:none; padding:30px 9px 0;
+ width:56px; text-align:center;}
+.ec-screen9 .firstnavBtn .screenApplyBtn, .ec-screen7 .firstnavBtn .screenApplyBtn {padding:20px 9px 0; height:54px;}
+.ec-screen8 .navCalcBtn a.submitbtn {padding-left:10px; float:left;}
+.ec-screen8 .navCalcBtn a, .ecScreen .bkbtn a {background:url(http://www.simplylife.ae/systemrs/images/back-arrow.png) no-repeat 21% 55%; text-align:right; padding-left:21px; padding-right:0;}
+.ecScreen.ec-screen6 .bkbtn a {text-align:left; padding-left:27px;}
+.ec-screen1 .navCalcBtn a{font-size:24px; background:url(http://www.simplylife.ae/systemrs/images/yellow-bullet.png) no-repeat 89% 54%; padding:38px 15px 0 15px; width:66px; height:61px;}
+
+.ec-screen1 .navCalcBtn {right:35px; background:url(http://www.simplylife.ae/systemrs/images/blue-circle.png) no-repeat 0 0; width:98px; height:99px;}
+.inputTextStyle {width:251px; height:35px; clear:both; text-align:left;}
+.ec-screen5 .ui-widget.inputTextStyle input, .inputTextStyle input, .ecScreen select, .selectedvalue, .ec-screen5 .custom-combobox-input {font-family:'museo_sans300'; font-size:16px; line-height:18px; color:#656565;}
+.inputTextStyle {float:left; display:inline; margin-bottom:5px; background:url(http://www.simplylife.ae/systemrs/images/calc-textbox-bg.png) no-repeat 0 0; font-family:'museo_sans300'; clear:both; position:relative;}
+.smallinput {float:left; background:url(http://www.simplylife.ae/systemrs/images/txt-doj-bg.png) no-repeat 0 0;  width:141px; height:35px; clear:none; position:relative;}
+.dateInput {float:left; background:url(http://www.simplylife.ae/systemrs/images/textbox-small-bg.png) no-repeat 0 0; width:41px; height:35px; clear:none;}
+.ec-screen4 .inputTextStyle, .ec-screen6 .inputTextStyle, .ec-screen4 .selectbg, .ec-screen4 .errorText {margin-left:32px;}
+.ec-screen5 .inputTextStyle, .ec-screen5 .selectbg {margin-left:20px;}
+.ec-screen5 .errorText {margin-left:9px;}
+.ui-widget .inputTextStyle {border:0;}
+.ec-screen4 .radioBtn {margin-left:72px;}
+.ec-screen8 .inputTextStyle, .ec-screen8 .errorText {margin-left:54px;}
+.inputTextStyle input {border:0; background:none; width:224px; padding:8px 10px 5px 17px; text-align:left; line-height:18px;}
+.smallinput input {width:108px; text-align:left; padding:10px 15px;}
+.dateInput input {width:31px; padding:10px 5px; text-align:center;}
+.ec-screen5 .dateInput {margin-left:0;}
+.eliCalc select {-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; filter:alpha(opacity=0); height:32px; width:251px; -moz-opacity:0; -khtml-opacity:0; opacity:0; cursor:pointer;}
+.selectbg {clear:both; margin-bottom:5px; text-align:left; background:url(http://www.simplylife.ae/systemrs/images/custom-select.png) no-repeat 0 0; float:left; height:32px; position:relative; width:251px;}
+.selectedvalue {clear:both; padding:8px 0 0 11px; position:absolute; width:240px;}
+.checkBox input {opacity:0; filter:alpha(opacity=0); height:15px; width:15px; position:relative; z-index:2;}
+.checkBox .cheked, .checkBox .uncheked {background:url(images/checkbox1.png) no-repeat 0 0; display:inline-block; position:relative; left:14px; top:1px; height:15px; width:15px; z-index:1;}
+.checkBox .uncheked {background-position:0 -15px;}
+.radioBtn input {opacity:0; filter:alpha(opacity=0); height:18px; width:18px; position:relative; z-index:2;}
+.radioBtn span {display:inline-block; position:relative; left:14px; top:1px; height:18px; width:18px; z-index:1;}
+.radioBtn .uncheked {background:url(http://www.simplylife.ae/systemrs/images/radio-btn-bg.png) no-repeat 0 0; }
+.radioBtn .cheked {background:url(http://www.simplylife.ae/systemrs/images/radio-selected.png) no-repeat 0 0;}
+.checkBox, .radioBtn {text-align:left; clear:both; font-size:18px; font-family:'museo_sans300'; color:#656565;}
+
+.allpro {padding-bottom:13px; clear:both; width:517px}
+.allpro li {width:111px; position: relative; float:left; margin-right:18px; text-align:center; cursor:pointer; height:145px;}
+.allpro li a {display:block;}
+.iconTitle, .iconImage {display:block; clear:both;}
+.iconTitle {padding-top:10px;}
+.allpro li .iconImage {width:120px; height:115px; cursor:pointer;}
+.iconpro1 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-education-icon.png) no-repeat 0 0;}
+.iconpro2 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-grow-business-icon.png) no-repeat 0 0;}
+.iconpro3 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-emergency-icon.png) no-repeat 0 0;}
+.iconpro4 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-vacation-icon.png) no-repeat 0 0;}
+.iconpro5 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-wedding-icon.png) no-repeat 0 0;}
+.iconpro6 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-trip-back-icon.png) no-repeat 0 0;}
+.iconpro7 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-car-icon.png) no-repeat 0 0;}
+.iconpro8 .iconImage {background:url(http://www.simplylife.ae/systemrs/images/calc-other-icon.png) no-repeat 0 0;}
+.allpro li:hover .iconImage, .allpro li.selected .iconImage {background-position:0 bottom}
+.ui-datepicker-trigger {float:left; border:none; background:none; position:absolute; right:-35px; *right:auto; top:5px; cursor:pointer;}
+.ec-screen5 .custom-combobox-input {border:none; background:url(http://www.simplylife.ae/systemrs/images/combo-select-bg.png) no-repeat 0 0; width:188px; padding: 10px 10px 10px 17px;}
+.ec-screen5 .ui-widget {font-size:16px; text-align:left; color:#656565;}
+.ec-screen5 .ui-button {background:url(http://www.simplylife.ae/systemrs/images/select.png) no-repeat 0 0; width:37px; border:none;}
+.ec-screen5 .ui-state-default .ui-icon {visibility:hidden;}
+.selectEmp {margin-left:21px;}
+.ec-screen5 .ui-menu .ui-menu-item {width:300px;}
+.ui-autocomplete-loading {background:url(http://www.simplylife.ae/systemrs/images/ui-anim_basic_16x16.gif) right center no-repeat;}
+.errorText {font-size:11px; color:red; padding:0 0 5px 15px; display:none; clear:both; text-align:left;}
+.errorText.centreAlign {text-align:center; margin-left:0;}
+.ecbox2Clone {display:none;}
+.othersInput{ background: #fff; border: 1px solid #ccc; border-radius: 28px; display: none; left: 118px; position: absolute; top: 44px; width: 181px;}
+.inputTextStyle.othersInput input{ width: 100%; -webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;}
+.othersInput .errorText{display: inline;padding-top: 10px;float: left;}
+/* Apply Now */
+.formContainer {width:83%;}
+.formContainer .innerContent {width:98%;}
+.formBox {width:100%; float:left; clear:both;}
+.formElement {float:left; clear:both; padding:0 0 10px 0;}
+.formElement label {font-weight:bold; float:left; font-size:12px; color:black; clear:left; padding:4px 10px 0 0; width:215px;}
+.formElement input {float:left; clear:right; border:1px solid black; font-size:12px; color:black; width:225px; padding:3px;}
+.formElement select {float:left; clear:right; border:1px solid black; font-size:12px; color:black; width:225px; padding:3px;}
+
+/* Cashback */
+.headerText {padding:36px 0 24px 0; width:100%;}
+.headerText h1 {color:#212165;font-family:'museo_sans300'; font-size:2.6em; font-weight:normal;}
+.headerText h1 span.boldText {color:#212165;font-family:'museo_sans700'; font-size:1.1em; font-weight:normal;}
+.categoryConatiner {background:#212165; float:left; width:100%; margin:0 0 14px 0;}
+.categoryConatiner .cetegoryTxt, .categoryConatiner .monthlySpend {color:#ffe106; float:left; font-size:1.8em; font-family:'museo_sans300' ; padding:10px 0 6px 23px;}
+.categoryConatiner .monthlySpend {float:right; padding:10px 23px 6px 0;}
+.calculatorContainer {background:url("/systemrs/images/content-bg.jpg") repeat-x 0 0; color:#f1f1f1;float:left; padding:25px; width:922px;}
+.categoryTypeConatiner {border-bottom:1px solid #e4e4e4; float:left; padding-bottom:10px; margin-bottom:10px; position:relative;}
+.categoryTypeConatiner label {background:url(http://www.simplylife.ae/systemrs/images/calculator-icons.png) no-repeat 0 0; color:#212165; float:left; font-family:'museo_sans300'; font-size:17px; height:35px; padding:8px 0 0 50px; width:251px; display:block;}
+.categoryTypeConatiner .slderBox {float:left; font-family:'museo_sans300'; margin:16px 31px 0 40px;/* position:relative;*/ width:366px; }
+.categoryTypeConatiner .slderBox .sliderBar {background:url(http://www.simplylife.ae/systemrs/images/cal-slider-bg.png) no-repeat 0 0; float:left; height:4px; width:366px; cur }
+.categoryTypeConatiner .slderBox .sliderBar .ui-widget-content {background:none; border:none; width:364px;}
+.categoryTypeConatiner .slderBox .sliderBar .ui-widget-content .ui-state-default {background:url(http://www.simplylife.ae/systemrs/images/slider-cursor-icon.png) no-repeat 0 0; border:none; cursor:pointer; color:none; position:absolute; top:-7px; height:20px; width:20px;-webkit-appearance:none; -moz-appearance:    none; appearance:none; outline:none;}
+.categoryTypeConatiner .slderBox .sliderBar .ui-widget-content .ui-state-default:hover {-webkit-appearance: none; -moz-appearance: none; appearance:none;}
+.leftAED, .rightAED {color:#212165; padding:10px 0 0 0; font-weight:bold;}
+.leftAED { float:left; }
+.rightAED { float:right;}
+.toolTip {position:absolute; left:0; top:-25px; width:auto; padding:3px; background:#212165; color:#fff; z-index:5; display:none;}
+.categoryTypeConatiner input, .totalSpend input {border:1px solid #cdcdcd; color:#212165; float:left; padding:4px; margin-top:5px; width:170px; background:#fff;}
+.categoryTypeConatiner label.jewelry{ background-position:0 -66px;}
+.categoryTypeConatiner label.mobile{ background-position:0 -129px;}
+.categoryTypeConatiner label.utilityBills{ background-position:0 -193px;}
+.categoryTypeConatiner label.movies{ background-position:0 -254px;}
+.categoryTypeConatiner label.travel{ background-position:0 -320px;}
+.categoryTypeConatiner label.dining{ background-position:0 -385px}
+.categoryTypeConatiner label.clothing{ background-position:0 -449px;}
+.categoryTypeConatiner label.others{ background-position:0 -516px;}
+.clculator{padding-top:22px; margin:0 auto; width:198px;}
+.categoryTypeConatiner.last{ border:none;}
+.clculator input {border:1px solid #212165; background:#ffe106; cursor:pointer; font-family:'museo_sans700'; font-size:2.4em; width:196px}
+.offerConatiner{float:left; margin:20px 0; width:100%; }
+.offerwrap{ float:left; width:602px;}
+.offerConatiner .cashBack{background:#212165; float:left; padding:34px 0 34px 30px; width:95%;}
+.offerConatiner .getTickt{float:right; padding:0 0 20px 20px; width:330px;}
+.offerConatiner .cashBack label, .offerConatiner .cashBack .offer h4{color:#ffe106; float:left; font-family:'museo_sans100'; font-size:2em; font-weight:normal; width:100%;}
+.offerConatiner .cashBack label span{font-family:'museo_sans700'; font-size:1.1em;}
+/*.offerConatiner .cashBack h4 span.leftAling{font-family:'museo_sans300'; padding-left:42px;}*/
+.offerConatiner .cashBack  label input{border:1px solid #cdcdcd; float:right; padding:5px; margin:1px 60px 0 9px; width:208px; background:white;}
+.offerConatiner .getTickt .termsCondition{ float:left; padding:10px 0 0 0; width:100%;}
+.offerConatiner .getTickt .termsCondition li{background:url(http://www.simplylife.ae/systemrs/images/gray-bullet-icon.jpg) no-repeat 0 5px; font-family:'museo_sans500'; color:#6b6b6b; font-size:1.2em; float:left;padding:0 0 5px 10px; width:100%; }
+
+/*.offer{ background:#eeeeee; float:left; padding:20px ; margin-top:5px; width:93%; display:none;} */
+table { width: 100%;}
+.offerConatiner .offer p{float:left; color:#000000; font-size:2.2em;font-family:'museo_sans300';}
+.offerConatiner .offer p span{font-family:'museo_sans700';}
+.offerConatiner .getTickt p{color:#212165; font-family:'museo_sans700'; float:left; font-size:1.5em;}
+.offerConatiner .getTickt p.knwmr{color:#212165; font-family:'museo_sans500'; font-size:1.2em; padding-bottom:20px; text-decoration:underline;}
+.offerConatiner .getTickt p.simplified { font-family:'museo_sans500'; font-size:1.2em; padding-bottom:10px; width:100%;}
+.offerConatiner .getTickt .btn{background:#ffe106; border:1px solid #212165; color:#212165; cursor:pointer; float:left; font-family:'museo_sans700'; font-size:1.5em; padding:5px; vertical-align:middle; width:118px;}
+.sliderBar .ui-widget-header {background:none;}
+.sliderBar .ui-slider-tooltip {display:none; left:0; top:-25px; width:auto; padding:3px; background:#212165; color:#fff; z-index:5; position:absolute; text-align:center;}
+
+/*24/09/2014*/
+.totalSpend {background:#eeeeee; color:#212165; font-size:2em;  font-size:2em; font-family:'museo_sans500';float:left; padding:2%; width:96%;}
+.totalSpend label span.totalMonthly{ float:left; padding-top:10px;}
+.totalSpend label input {border:none; background:#eeeeee; color:#212165; font-family:'museo_sans500'; font-size:1em; float:right; margin:5px 9px 0 0;}
+.totalSpend label{float:left; width:100%}
+.totalSpend input{ float:left; margin:0;}
+.errorMsg {color:red; font-size:11px;}
+input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {-webkit-appearance:none; margin: 0;}
+
+/*Added On 07/11/2014*/
+.knwmoreLink2{top:280px}
+.banner3 img{ float:left;}
+.banner3 .img3{float:right; padding:0;}
+
+.videotab{ width:690px; margin:0 auto}
+.videotab ul,.videoWrapper{ float:left; width:100%; border-bottom:1px solid #ffe106}
+.videotab ul{ margin-bottom:19px}
+.videotab ul li{ float:left; width:125px; text-align:center; font-size:1.6em; color:#7c7c9d; background:#e1e1e1; padding:14px 0; margin-right:7px; cursor:pointer}
+.videotab ul li.selected{ background:#ffe106; color:#181759}
+.tvcVideo,.tvcBannerCarousel{ display:none}
+span.toolTip2{ cursor:pointer; float: left;position: absolute;right: -24px;padding: 2px 8px;top: 9px;background: #212165;color:#fff;text-align: center;	font-size: 1.5em;border-radius: 100%;}
+.ToolTipContent{position: absolute;
+left: 176px;
+bottom: 30px;
+width: 182px;
+font-size: 1.2em;
+background: #fff;
+padding: 15px;
+border: 1px solid #333;}
+
+.click-to-call{ float:left; padding:22px 0 0 0;}
+.click-to-call img{ float:left;}
+.click-to-call a {color: #000;font-family: "museo_sans300";font-size: 1.5em;line-height:30px; }
+
+
+/* copy the following 2 classes */
+.clicknew{ position:relative}
+.clicknew img{ position:absolute; padding-left:5px}
+
+
+/*============ Responsive Css ============*/
+/*@media only screen  and (width: 768px), (min-width:769px) and (max-width:1023px)  {
+
+}
+
+@media all and (device-width: 768px) and (device-height: 1024px) and (orientation:portrait) {
+
+}
+
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+}
+*/
+
+@media only screen and (min-width:851px) and (max-width:1024px){
+.click-to-call{ display:none;}
+}
+
+@media only screen and (min-width:851px) and (max-width:1024px){
+.mediaContainerWrapper .contentContainer {width:96%;}
+}
+
+
+@media only screen and (min-width:320px) and (max-width:767px){
+	body {-webkit-text-size-adjust:100%;}
+	.logo {padding:15px 0 0 5px;}
+	.logo img {width:100px;}
+
+	.header {width:100%; height:auto; position:relative; z-index:2;}
+	.mobileLink {display:block; float:right; margin:2px 0 0 0;}
+	.mobileLink img {width:50px;}
+	.navigation {float:right;}
+	/*added on 04.05.2015*/
+	.navigation > ul {display:none; position:absolute; right:0; top:50px; background:#ffe106 url(http://www.simplylife.ae/systemrs/images/menu-bg.png) repeat 0 0; width:160px; float:left; z-index:9999;}
+	.personalLoanBT .innerBannerText{ box-sizing:border-box;}
+	/*End*/
+	.navigation ul li {padding:0; float:none; clear:both; border-top:1px solid #ffe106; width:100%; float:left;}
+	.navigation ul li:first-child {border-top:none;}
+	.navigation ul li a {padding:15px 18px; color:#2e2801; display:block; float:none;}
+	.navigation ul li a:hover {background:none; color:#2e2801;}
+	.navigation ul li a:hover.active {color:#2e2801;}
+	.navigation ul li ul {position:static; background:#212165; top:0;}
+	.navigation ul li ul li {font-size:14px; float:none; border-top:none!important;}
+
+	.contactBand {margin-left:0;}
+	.contactBand a {padding:0;}
+	.contactBand a.contactLink {display:block; color:#212165; font-family:'museo_sans500'; font-size:14px; padding:5px;}
+	.contactBand {background:none; float:left; width:auto; padding:12px 5px 0 0;}
+	.contactNumber {display:none;}
+.contactBand a.contactImg {background:url(http://www.simplylife.ae/systemrs/images/contact-icon.png) no-repeat 0 0; display:block; width:32px; height:34px; background-size:contain;}
+
+	.contactBand span.contactText {display:none;}
+
+	.topbanner {display:block;}
+	/*.bannerStyle {background-size:contain; width:99%;}*/
+	.bannerStyle {width:100%; min-height:120px;}
+	.img1 {padding-top:50px; width:45%;}
+	.img2 {padding-right:10px; padding-top:40px; width:50%;}
+	.banner3 {text-align:center; padding-top:60px;}
+	.banner3 img {width:50%;}
+	.banner3 img.fullImg {width:100%!important;}
+	.knwmoreLink {font-size:1.3em; top:110px;}
+	.creditBT .innerBannerImg img {right:10px;}
+
+	.contentContainer {padding:0;}
+	.topBanner {padding:0 0 0 5px;}
+	.innerContent p, .innerContent ul li {font-size:1.2em;}
+	/*Added on 04.05.2015*/
+	.innerContent h3 {font-size:2em; float:left;}
+	/*End*/
+	.innerBannerImg img {margin-right:5px;}
+	.tabContent {width:97%;}
+	#tab3Content .singleCol {width:98%;}
+	.expandLink, .collapseLink {font-size:13px;}
+	.innerContent .faqAccordian h3 {line-height:13px;}
+	.innerContent .faqAccordian p {padding-bottom:10px;}
+	.innerContent h4 {font-size:1.5em;}
+	.form input[type="text"] {width:152px;}
+	.form select {width:160px;}
+	.innerContent .form .btnFields .applyBtn {padding:0 5px; width:80px;}
+	.contactContainer .contentContainer {width:100%; padding:0;}
+	.contactTabContent .form input.resetBtn {width:58px;}
+	.tblStyle {width:95%;}
+
+	.withLhs .innerContent {padding:26px 0 30px 0;}
+	.lhs {width:98%; float:none; clear:both;}
+	.lhs li {float:left; padding:6px 5px 6px 12px; width:38%;}
+
+	.footer, .supportLink, .makeStart, .productCarousel, .bannerCarousel, .withLhs .contentContainer, .calcBox, .emiContainer, .ecbox1 {width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing: border-box; padding:0 5px;}
+	 .contentContainerWrapper, .mainContainer {width:100%;}
+
+	 .formContainer .innerContent, .formContainer {width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing: border-box;}
+
+	 #productOwlCarousel {width:80%; margin:0 auto;}
+	 .mobileitem {display:block;}
+	.owl-buttons div.owl-next {right:-21px;}
+	.owl-buttons div.owl-prev {left:-21px;}
+	.owl-buttons div {top:25px;}
+	#productOwlCarousel .item span.proImage {float:none; display:inline-block; text-align:center;}
+	/*.owl-buttons {display:none;}*/
+	.innerContent .form .btn {-webkit-appearance:none; border-radius:0;}
+	.form select {background:url(http://www.simplylife.ae/systemrs/images/black-bullet-drop.jpg) no-repeat 98% center; -webkit-appearance:none; cursor:pointer;}
+
+	.slider {display:none;}
+	.calcBox h1 {padding:25px 0 0 0; font-size:25px;}
+	.calcBox h1, .loanType {float:none; clear:both;}
+	.calc-wrapper .label span {font-size:1.4em; width:75%;}
+	.field, .row3 .AED-field, .calc-wrapper .applyNow {clear:both; float:left; margin-left:69px;}
+	.row3 .AED-field {top:-19px;}
+	.salaryBlock .block {width:98%; margin-left:0; float:none; clear:both; margin-bottom:20px;}
+	.calc-wrapper .row3 {width:100%;}
+	.calc-wrapper .applyNow {margin-top:20px;}
+	.calc-wrapper .row3 .label {clear:both; width:98%;}
+
+	.mediaContainerWrapper .contentContainer, .tvcBannerCarousel, .printAdBannerCarousel, .radioBannerCarousel {width:100%; padding:0;}
+	.mediaContainerWrapper .owl-carousel, .mediaContainerWrapper #printAdCarousel, .mediaContainerWrapper #onlineAdCarousel {width:90%; text-align:center;}
+	.mediaContainerWrapper .owl-buttons div {top:40%;}
+	.OnlineBanner, .printBanner {width:100%; text-align:left; float:none; clear:both;}
+	.mediaContainerWrapper #onlineAdCarousel {margin-top:0;}
+
+	#tvcCarousel1 iframe, #tvcCarousel2 iframe, #tvcCarousel3 iframe, #generictvcCarousel1 iframe, #generictvcCarousel2 iframe, #generictvcCarousel3 iframe {width:600px; height:356px;}
+	.innerContent .videoTitle {left:148px;}
+
+	/* Eligibility Mobile */
+	.eliCalc.contentContainerWrapper {padding:0;}
+	.eliCalc .contentContainer {float:none;}
+	.eliCalc .innerContent {width:100%; padding:26px 0;}
+	#mobileCalc .ecScreen {position:relative; margin:0; width:100%;}
+	#mobileCalc .ecbox1, #mobileCalc .ecbox2 {float:none; width:100%; background:#ffe106; clear:both;}
+	#mobileCalc .ecbox1 {float:left;}
+	#mobileCalc .ecbox1 {padding:10px 5px 0 5px; height:auto;}
+	#mobileCalc .ecbox2 {background:#fff; position:static; height:auto; padding:35px 0 0 0; text-align:center;}
+    #mobileCalc .ec-screen7 .ecbox2,  #mobileCalc .ec-screen8 .ecbox2,  #mobileCalc .ec-screen9 .ecbox2 {text-align:left;}
+	#mobileCalc .ecScreen .ecbox1 img {position:static;}
+	.mainTitle {/*position:absolute; right:10px; top:64px;*/ display:none;}
+    .ec-screen2 .mainTitle {top:99px;}
+	.ec-screen3 .mainTitle {top:90px;}
+   .ecbox2Content {padding:0; margin:0 auto; clear:both;}
+   .ecScreen .ecbox1 img {width:95px; top:0; left:0; height:auto; float:left;}
+   .ec-screen7 .ecbox1 img, .ec-screen9 .ecbox1 img {width:137px;}
+   .ec-screen6 .ecbox1 img, .ec-screen8 .ecbox1 img {width:94px;}
+   .innerContent .titleStyle1, .innerContent .titleStyle7 {font-size:42px; line-height:42px; padding:0 0 5px 0;}
+   .innerContent .titleStyle4 {width:197px; font-size:20px;}
+   .innerContent .titleStyle13 {width:212px; font-size:19px;}
+   .innerContent .titleStyle2 {font-size:24px; line-height:24px;}
+   .innerContent .titleStyle3 {margin:0 auto;}
+   .innerContent .titleStyle9 {font-size:15px;}
+   .innerContent .titleStyle9 span {font-size:15px;}
+   .innerContent .ec-screen7 .titleStyle12, .innerContent .ec-screen9 .titleStyle12 {text-align:center; margin-left:0;}
+   .innerContent .titleStyle12 {font-size:24px;}
+   .ecScreen .navCalcBtn {clear:both; background-size:100% auto; left:0; margin:0 auto; position:relative; right:auto; top:0; bottom:auto;}
+
+	.ecScreen .CalcBtnBox {width:59%; margin:0 auto;}
+	.ecScreen.ec-screen1 .CalcBtnBox {width:100%; margin:0 auto;}
+   /*.ec-screen7 .navCalcBtn, .ec-screen8 .navCalcBtn, .ec-screen9 .navCalcBtn {float:left; clear:none;}*/
+   .ecScreen .navCalcBtn {float:left; clear:none;}
+   .ecScreen.ec-screen1 .navCalcBtn {clear:both; float:none;}
+   .ecScreen .navCalcBtn a {background-size:auto auto; font-size:17px;/* padding-right:16px;*/}
+   .ec-screen1 .navCalcBtn a {font-size:22px;}
+   /*.ec-screen2 .navCalcBtn {margin:20px auto 0 auto; display:inline-block;}*/
+   .allpro {width:82%; margin:0 auto;}
+   .ecbox2Clone {display:block; float:left; margin:40px 0 0 15px;}
+   .ec-screen2 .ecbox2Clone {margin:85px 0 0 15px;}
+   .ec-screen3 .ecbox2Clone {margin:67px 0 0 15px;}
+   .ec-screen3 .ecbox2Clone {margin:100px 0 0 15px;}
+   .ec-screen4 .ecbox2Clone, .ec-screen5 .ecbox2Clone {width:64%;}
+   .ec-screen6 .ecbox2Clone {width:64%; margin:34px 0 0 15px;}
+   .ec-screen7 .ecbox2Clone, .ec-screen8 .ecbox2Clone, .ec-screen9 .ecbox2Clone {width:54%; margin:94px 0 0 -39px;}
+   .ec-screen7 .ecbox1Content, .ec-screen8 .ecbox1Content, .ec-screen9 .ecbox1Content {width:96%;}
+   .ec-screen8 .ecbox2Clone {margin:97px 0 0 15px;}
+   .ec-screen8 .ecbox2Content {width:100%;}
+   .ecbox2Content {padding-top:20px;}
+   .ec-screen6 .ecbox2Content {width:323px;}
+   .ecbox1Content {width:100%; margin:0 auto;}
+   .innerContent .titleStyle13 {width:200px;}
+   .CalcBtnBox {width:100%; padding-top:20px; clear:both;}
+  /* .ec-screen2 .CalcBtnBox {float:left;}*/
+  .ec-screen3 {float:none;}
+   .ec-screen4 .ecbox2Content, .ec-screen5 .ecbox2Content, .ec-screen6 .ecbox2Content, .ec-screen7 .ecbox2Content, .ec-screen8 .ecbox2Content, .ec-screen9 .ecbox2Content {padding:0;}
+   .innerContent .titleStyle7 {font-size:29px; line-height:29px;}
+   .ec-screen7 .ecbox2Content, .ec-screen9 .ecbox2Content {width:302px;}
+
+   .mediaCenterMenu ul li a{ padding:5px 6px}
+   .mediaBT .innerBannerText{ padding:20px 0 25px}
+}
+
+@media only screen and (min-width: 768px) {
+	.banner2 .img2 {width:339px; padding-top:81px;}
+	.totalSpend{ box-sizing:border-box; width:100%}
+	.banner3 img.fullImg {width:100%!important;}
+}
+@media only screen and (min-width: 768px) and (max-width:850px){
+	.header {width:100%; height:auto;}
+	.logo {padding:35px 0 0 5px;}
+	.logo img {width:180px;}
+
+	.navigation {float:right;}
+	.contactBand {margin-left:0;}
+	.navigation ul li ul {top:97px;}
+	.navigation ul li {font-size:1.5em; padding-right:10px;}
+	.navigation ul li a {padding:55px 2px 26px 2px;}
+
+	.topbanner {display:block;}
+	.topBanner, .contentContainer {padding:0;}
+	.specialOffersBT  .txtStyle, .specialOffersBT  .txtStyleBold {font-size:4.5em;}
+	.specialOffersBT .innerBannerImg img {width:365px; padding:18px 0 0 0;}
+	.creditBT .innerBannerImg img {right:10px;}
+	.productList li {padding:0 16px 0 0;}
+	.rateBox .rBox1, .rateBox .rBox2 {width:33%; margin-right:79px;}
+	.calc-wrapper {width:85%;}
+	.calcBox h1 {padding:25px 0 0 0; font-size:25px;}
+
+	.footer, .supportLink, .makeStart, .productCarousel, .bannerCarousel, .contentContainerWrapper, .mainContainer, .calcBox, .emiContainer {width:100%; -webkit-box-sizing:border-box; -moz-box-sizing:border-box; box-sizing: border-box; padding:0 5px;}
+	 #productOwlCarousel {width:85%; margin:0 auto;}
+	 .mainContainer.contactContainer, .contactContainer .contentContainerWrapper, .contactContainer .contentContainer, .emiContainerWrapper {width:100%; padding:0;}
+
+	.mediaContainerWrapper .contentContainer, .tvcBannerCarousel, .printAdBannerCarousel, .radioBannerCarousel {width:100%; padding:0;}
+	.mediaContainerWrapper .owl-carousel, .mediaContainerWrapper #printAdCarousel, .mediaContainerWrapper #onlineAdCarousel {width:90%; text-align:center;}
+
+	.ecScreen {width:100%; margin:0;}
+    .ecbox2Content {padding:108px 0 0 125px;}
+	.ecbox1 {background-size:cover; height:383px; width:305px;}
+    .ec-screen1 .ecbox1 img, .ec-screen5 .ecbox1 img {left:122px;}
+	.ecScreen .ecbox1 img {width: 163px;}
+	.ecbox2 {background-size:cover; height:383px; width:430px;}
+	.navCalcBtn {bottom:-13px;}
+
+	.ec-screen2 .ecbox1 img {width:125px; left:161px; top:51px;}
+	.ec-screen2 .ecbox2Content {padding:81px 0 0 117px;}
+	.ec-screen2 .navCalcBtn {bottom:-16px;}
+
+	.ec-screen3 {background-size:cover; height:356px;}
+	.ec-screen3 .allpro li .iconImage {background-size:cover; width:76px; height:76px;}
+	.ec-screen3 .ecbox2 {width:494px;}
+    .ec-screen3 .ecbox2Content {width:84%;}
+	.allpro {padding-bottom:13px; width:500px;}
+	.allpro li {width:98px; height:105px; margin-right:5px;}
+    .ec-screen3 .ecbox1 img {width:106px; left:129px;}
+	.ec-screen3 .navCalcBtn {bottom:-38px;}
+	.iconTitle {font-size:12px; padding-top:6px;}
+
+	.ec-screen4 .ecbox1 img, .ec-screen6 .ecbox1 img, .ec-screen8 .ecbox1 img {width:118px;}
+	.ec-screen4 .ecbox2Content {padding:68px 0 0 89px; width:300px;}
+	.ec-screen4 .navCalcBtn, .ec-screen5 .navCalcBtn, .ec-screen6 .navCalcBtn {bottom:-12px;}
+	.ec-screen5 .ecbox2Content {padding:44px 0 0 105px; width:260px;}
+
+
+	.innerContent .ec-screen6 .titleStyle8 {font-size:22px;}
+	.innerContent .ec-screen6 .titleStyle9/*, .innerContent .ec-screen7 .titleStyle9*/ {font-size:17px;}
+	.ec-screen6 .ecbox2Content, .ec-screen8 .ecbox2Content {padding:44px 0 0 85px; width:322px;}
+
+    .ec-screen9 .ecbox1 img, .ec-screen7 .ecbox1 img {width:274px;}
+    .ec-screen7 .ecbox2Content, .ec-screen9 .ecbox2Content {padding:78px 0 0 84px; width:340px;}
+/*	.ec-screen7 .ecbox2Content, .ec-screen9 .ecbox2Content {padding:68px 0 0 96px; width: 290px;}*/
+	.innerContent .ec-screen7 .titleStyle12, .innerContent .ec-screen9 .titleStyle12 {font-size:28px; padding-bottom:10px}
+	.ec-screen9 .navCalcBtn.secnavBtn, .ec-screen7 .navCalcBtn.secnavBtn {bottom:54px;}
+	.ec-screen9 .navCalcBtn.firstnavBtn, .ec-screen7 .navCalcBtn.firstnavBtn {bottom:-9px;}
+	/*.innerContent .titleStyle9 span {font-size:16px;}*/
+	.ec-screen2 .secnavBtn, .ec-screen4 .secnavBtn, .ec-screen5 .secnavBtn  {bottom:25px; right:-12px}
+	.ec-screen8 .secnavBtn {bottom:39px;}
+	.ec-screen3 .secnavBtn {bottom:17px; right:-1px}
+	.ec-screen8 .ecbox2Content {width:312px;}
+	.innerContent .ec-screen7 .titleStyle12, .innerContent .ec-screen9 .titleStyle12 {margin-left: 38px;}
+
+	.banner3 img.fullImg {width:100%!important;}
+}
+@media only screen and (min-width:600px) and (max-width:767px){
+	.banner1 .knwmoreLink {top:150px;}
+	.banner2 .knwmoreLink {top:128px;}
+	#tvcCarousel1 iframe, #tvcCarousel2 iframe, #tvcCarousel3 iframe, #generictvcCarousel1 iframe, #generictvcCarousel2 iframe, #generictvcCarousel3 iframe {width:490px; height:291px;}
+	.totalSpend{ box-sizing:border-box;}
+	.banner3 img.fullImg {width:100%!important;}
+	.click-to-call{ display:none;}
+}
+
+@media only screen and (min-width:340px) and (max-width:640px){
+	#container{width:100%}
+	.bannerStyle {min-height:200px;}
+	.aboutBT .txtStyle, .aboutBT .txtStyleBold {font-size:2.8em;}
+	.personalLoanBT .txtStyle, .personalLoanBT .txtStyleBold {font-size:3.5em;}
+	.txtStyleSlim {font-size:2.5em;}
+	.specialOffersBT .innerBannerText {width:68%;}
+	.innerBannerImg img {width:200px;}
+	.specialOffersBT .innerBannerImg img {width:300px;}
+	.specialOffersBT  .txtStyle, .specialOffersBT  .txtStyleBold, .carLoanBT .txtStyle, .carLoanBT .txtStyleBold {font-size:3.6em;}
+	.carLoanBT .innerBannerImg img {width:384px; padding:44px 0 0;}
+/*	.growBusinessBT .txtStyle, .growBusinessBT .txtStyleBold, .vacationLoanBT .txtStyle, .vacationLoanBT .txtStyleBold,  .emergrncyLoanBT .txtStyle, .emergrncyLoanBT .txtStyleBold, .tripBackLoanBT .txtStyle, .tripBackLoanBT .txtStyleBold  {font-size:4.8em;}*/
+	.growBusinessBT .innerBannerImg img {width:202px;}
+	.vacationLoanBT .innerBannerImg img {width:173px;}
+	.emergrncyLoanBT .innerBannerImg img {width:263px;}
+	.tripBackLoanBT .innerBannerImg img {width:250px;}
+	.startLifeBT .innerBannerImg img {width:234px;}
+	.educationLoanBT .innerBannerImg img {width:137px;}
+	.specialOffersIC {margin-top:-87px;}
+	.mediaBT .innerBannerImg img {width:290px;}
+	#tvcCarousel1 iframe, #tvcCarousel2 iframe, #tvcCarousel3 iframe, #generictvcCarousel1 iframe, #generictvcCarousel2 iframe, #generictvcCarousel3 iframe {width:490px; height:291px;}
+	 .audioplayer {width:95%; text-align:center; margin:0 auto;}
+	 .audioplayer-time-current {left:49%;}
+	  .radioBannerCarousel .tabContainer, .videoWrapper .langTabContainer {width:46%;}
+	  .proImage img {width:140px;}
+	  .owl-buttons div {top:51px;}
+	 .mediaContainerWrapper .bottom-banners .owl-buttons div.owl-prev {left:60px;}
+     .mediaContainerWrapper .bottom-banners .owl-buttons div.owl-next {right:60px;}
+	 .ecbox1Content {width:52%;}
+	 .ec-screen7 .ecbox1Content, .ec-screen8 .ecbox1Content, .ec-screen9 .ecbox1Content {width:64%;}
+	 .ecScreen .CalcBtnBox {width:30%;}
+	 .ecScreen.ec-screen1 .CalcBtnBox {width:100%;}
+	.banner3 img.fullImg {width:100%!important;}
+	.click-to-call{ display:none;}
+
+    /* .ec-screen7 .CalcBtnBox, .ec-screen8 .CalcBtnBox, .ec-screen9 .CalcBtnBox {width:30%;}*/
+
+}
+
+@media only screen and (min-width:340px) and (max-width: 600px){
+	.bannerStyle {min-height:157px;}
+	.carLoanBT .txtStyle, .carLoanBT .txtStyleBold, .vacationLoanBT .txtStyle, .vacationLoanBT .txtStyleBold, .emergrncyLoanBT .txtStyle, .emergrncyLoanBT .txtStyleBold, .tripBackLoanBT .txtStyle, .tripBackLoanBT .txtStyleBold {font-size:2.6em;}
+	.tripBackLoanBT .innerBannerImg img {width:165px;}
+	.startLifeBT .innerBannerImg img {width:158px;}
+	.specialOffersIC {margin-top:-50px;}
+	.radioBannerCarousel .tabContainer, .videoWrapper .langTabContainer {width:52%;}
+	#productOwlCarousel .item span.proImage {width:140px}
+   .mediaBT .txtStyle, .mediaBT .txtStyleBold {font-size:5.2em;}
+   .supportLink ul li {padding:0 46px 0 0;}
+   .fListBox {width:20%;}
+   .footerLogo {text-align:right; float:none;}
+    .ecbox1Content {width:100%;}
+	.ec-screen7 .ecbox1Content, .ec-screen8 .ecbox1Content, .ec-screen9 .ecbox1Content {width:63%;}
+	.banner3 img.fullImg {width:100%!important;}
+	.ecScreen .CalcBtnBox {width:59%;}
+	 .ecScreen.ec-screen1 .CalcBtnBox {width:100%;}
+	.click-to-call{ display:none;}
+	/*.ec-screen7 .CalcBtnBox, .ec-screen8 .CalcBtnBox, .ec-screen9 .CalcBtnBox {width:59%;}*/
+}
+
+@media only screen and (min-width: 320px) and (max-width:360px){
+	/*.bannerStyle {min-height:140px;}*/
+
+	#productOwlCarousel .item span.proImage {width:125px}
+   /* #productOwlCarousel .item span.proImage {height:86px;}*/
+	.proImage img {width:94px;}
+     #productOwlCarousel .item span.proText {font-size:1.4em;}
+	.topBanner {min-height:175px;}
+	.owl-buttons div {top:25px;}
+	.banner3 img.fullImg {width:100%!important;}
+	.innerBannerText {padding:20px 0 50px 0;}
+	.specialOffersBT .innerBannerText {width:63%; padding:18px 0 50px 0; }
+	.specialOffersBT .innerBannerImg img {width:165px; padding:18px 0 0 0;}
+	.growBusinessBT .innerBannerImg img {width:120px;}
+	.vacationLoanBT .innerBannerImg img {width:116px;}
+	.educationLoanBT .innerBannerImg img {width:92px;}
+	.mediaBT .innerBannerImg img {width:183px; padding:84px 0 0;}
+	 .specialOffersIC {width:97%;}
+	 .creditBT .innerBannerText {width:43%; padding:40px 0 50px 0;}
+
+	.txtStyle, .txtStyleBold {font-size:2.2em;}
+	.txtStyleSlim {font-size:1.6em;}
+	.personalLoanBT .innerBannerText .txtStyleBold {display:block;}
+	.personalLoanBT .txtStyle, .personalLoanBT .txtStyleBold {font-size:3em;}
+	.growBusinessBT .txtStyle, .growBusinessBT .txtStyleBold, .mediaBT .txtStyle, .mediaBT .txtStyleBold {font-size:2.8em;}
+	.specialOffersBT  .txtStyle, .specialOffersBT  .txtStyleBold {font-size: 2.2em;}
+	.innerBannerImg img {width:150px;}
+	.carLoanBT .innerBannerImg img {width:205px; padding:44px 0 0;}
+	.emergrncyLoanBT .innerBannerImg img {width:170px;}
+	.innerContent h1 {padding:0 0 15px 0;}
+	.form label {width:128px;}
+	.tblStyle {width:100%;}
+	.tblStyle tr td, .tblStyle tr th {padding:2px;}
+
+	.productList li {padding:0 7px 0 0; width:70px;}
+    .productList li a span, .productList li a:hover span, .productList li.tabSelected a span {background-size:cover; width:70px; height:70px;}
+
+    .rateBox .rBox1, .rateBox .rBox2 {margin-right:0;}
+	.rateBox .rBox1 {width:57%;}
+	.rateBox .rBox2 {width:42%;}
+
+	.makeStartWrapper {height:auto; padding-bottom:20px;}
+	.makeStart ul li {width:70px; font-size:1.3em;}
+	.makeStart ul li.banIco1 span, .makeStart ul li.banIco1:hover span,.makeStart ul li.banIco4 span, .makeStart ul li.banIco4:hover span, .makeStart ul li.banIco2 span, .makeStart ul li.banIco2:hover span, .makeStart ul li.banIco3 span, .makeStart ul li.banIco3:hover span {background-size:cover; height:80px; width:80px;}
+
+	.supportLink ul li {padding: 0 6px 0 0;}
+	.supportLink ul li span {padding:0 0 18px 27px;}
+    .supportLink ul li a {font-size:1.1em;}
+
+	.fListBox {width:100%; clear:both; padding-bottom:15px;}
+	.footerLogo {padding-bottom:10px; float:left;}
+
+	#tvcCarousel1 iframe, #tvcCarousel2 iframe, #tvcCarousel3 iframe, #generictvcCarousel1 iframe, #generictvcCarousel2 iframe, #generictvcCarousel3 iframe {width:260px; height:154px;}
+    .radioBannerCarousel .tabContainer, .videoWrapper .langTabContainer {width:95%;}
+	.innerContent .videoTitle {left:60px;}
+    .audioplayer {width:90%; margin:0 auto;}
+	.audioplayer-playpause {width:30px;}
+	.audioplayer-bar {left:46px; right:43px;}
+	.audioplayer-volume {width:30px}
+	.audioplayer-volume-adjust {height:23px;}
+	.audioplayer-time-current {left:115px;}
+
+	.innerContent .videoTitle {font-size:14px;}
+	.mediaContainerWrapper .bottom-banners .owl-buttons div.owl-prev {left:-21px;}
+    .mediaContainerWrapper .bottom-banners .owl-buttons div.owl-next {right:-21px;}
+	.ec-screen7 .ecbox1Content {width:100%;}
+	.ec-screen7 .ecbox1Content, .ec-screen8 .ecbox1Content, .ec-screen9 .ecbox1Content {width:96%;}
+	/* Cashback
+	.mainContainer{ width:100%;}
+	.calculatorContainer{ box-sizing:border-box;}
+	.categoryTypeConatiner label{ font-size:1.6em;}
+	.categoryTypeConatiner input{ width:80%;}
+	.offerConatiner .cashBack h4.freeTckt{ width:100%;}*/
+	.click-to-call{ display:none;}
+
+
+}
+
+@media only screen and (width: 320px){
+  .detailContentainer .offerListItem .offerListRight{ width:100%;}
+}
+
+@media only screen and (width: 480px){
+	.bannerStyle {min-height:210px;}
+
+	 #productOwlCarousel {width:80%;}
+	.proImage img {width:125px;}
+	.owl-buttons div {top:39px;}
+	.topBanner {height:240px;}
+	.specialOffersBT .innerBannerText {width:67%; padding:25px 0 50px 0;}
+	.educationLoanBT .innerBannerText {width:76%;}
+	.specialOffersBT .innerBannerImg img {width:220px;}
+	.txtStyle, .txtStyleBold {font-size:2.8em;}
+	.specialOffersBT  .txtStyle, .specialOffersBT  .txtStyleBold {font-size: 2.8em;}
+	.specialOffersIC {margin-top:-125px; width:55%;}
+
+	.txtStyleSlim {font-size:2em;}
+	.innerBannerImg img {width:180px;}
+	.carLoanBT .innerBannerImg img {width:315px; padding:56px 0 0;}
+	.growBusinessBT .txtStyle, .growBusinessBT .txtStyleBold {font-size:3.8em;}
+	.growBusinessBT .innerBannerImg img {width:175px;}
+	.vacationLoanBT .innerBannerImg img {width:162px;}
+	.emergrncyLoanBT .innerBannerImg img {width:240px;}
+	.tripBackLoanBT .innerBannerImg img {width:236px;}
+	.startLifeBT .innerBannerImg img {width:220px;}
+	.educationLoanBT .innerBannerImg {width:24%;}
+	.educationLoanBT .innerBannerImg img {width:125px;}
+	.mediaBT .txtStyle, .mediaBT .txtStyleBold {font-size:5em;}
+	.mediaBT .innerBannerImg img {width:230px; padding:148px 0 0;}
+	.banner1 .knwmoreLink {top:130px;}
+	.banner2 .knwmoreLink {top:117px;}
+	.banner3 img.fullImg {width:100%!important;}
+	.productList li {padding:0 16px 0 0;}
+	.rateBox .rBox1, .rateBox .rBox2 {width:40%; margin-right:45px;}
+
+	.makeStart ul li {padding-right:22px; width:132px;}
+
+	.supportLink ul li {padding:0 29px 0 0;}
+	.supportLink ul li a {font-size:1.4em;}
+
+	.fListBox {width:20%; font-size:1.2em;}
+	.footerLogo {clear:both; padding:10px 0; width:100%; float:none;}
+	.footerLogo a {float:right;}
+
+	#tvcCarousel1 iframe, #tvcCarousel2 iframe, #tvcCarousel3 iframe, #generictvcCarousel1 iframe, #generictvcCarousel2 iframe, #generictvcCarousel3 iframe {width:260px; height:154px;}
+	/*#printAdCarousel img, #onlineAdCarousel img {width:90%;}
+	.mediaContainerWrapper  .radioBannerCarousel .owl-carousel {width:85%;}*/
+	 .radioBannerCarousel .tabContainer, .videoWrapper .langTabContainer {width:67%;}
+	 .audioplayer {width:95%; text-align:center; margin:0 auto;}
+	 .audioplayer-time-current {left:49%;}
+	 .mediaContainerWrapper .radioBannerCarousel .owl-carousel .owl-buttons div {top:30%;}
+	 .mediaContainerWrapper .bottom-banners .owl-buttons div.owl-prev {left:16px;}
+     .mediaContainerWrapper .bottom-banners .owl-buttons div.owl-next {right:16px;}
+
+	  .ecbox1Content {width:70%;}
+	  .ec-screen3 .ecbox1Content {width:90%;}
+      .innerContent .ec-screen3 .titleStyle13 {width:284px;}
+	  .ecScreen .CalcBtnBox {width:39%;}
+	 .ecScreen.ec-screen1 .CalcBtnBox {width:100%;}
+	.click-to-call{ display:none;}
+
+
+
+}
+@media only screen and (max-device-width: 480px) and (orientation:landscape)
+{
+	.rateBox .rBox1, .rateBox .rBox2 {width:40%; margin-right:45px;}
+   .supportLink ul li {padding:0 28px 0 0;}
+   .footerLogo {clear:both; padding:10px 0; width:100%; float:none;}
+   .footerLogo a {float:right;}
+   .fListBox {width:110px;}
+   .form select {height:26px;}
+   .click-to-call{ display:none;}
+}
+@media (device-height: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation:landscape) {
+         .fListBox {width:94px!important;}
+	.banner3 img.fullImg {width:100%!important;}
+        .click-to-call{ display:none;}
+}
+@media only screen and (max-device-width: 480px) and (orientation:portrait)
+{
+   .supportLink ul li {padding:0 5px 0 0;}
+   .form select {height:26px;}
+	.banner3 img.fullImg {width:100%!important;}
+   .click-to-call{ display:none;}
+}
+
+@media only screen and (min-device-width : 100px) and (max-device-width:690px) and (orientation:landscape){
+ .fListBox {width:100px;}
+ .supportLink ul li {padding:0 25px 0 0;}
+ .rateBox .rBox1 {width:41%;}
+	.banner3 img.fullImg {width:100%!important;}
+   .click-to-call{ display:none;}
+}
+@media only screen and (min-device-width : 100px) and (max-device-width:800px) {
+ .form .inputRadioWrap span {padding-top:3px;}
+	.banner3 img.fullImg {width:100%!important;}
+   .click-to-call{ display:none;}
+}
+/*For S2 */
+@media only screen
+and (min-device-width : 480px)
+and (max-device-width : 800px)
+and (orientation : landscape) and (-webkit-device-pixel-ratio: 1.5){
+	.banner1 .knwmoreLink {top:140px;}
+	.proImage img {width:120px;}
+	.mediaBT .txtStyle, .mediaBT .txtStyleBold {font-size:5em;}
+	.mediaBT .innerBannerImg img {width:230px; padding:148px 0 0;}
+	#tvcCarousel1 iframe, #tvcCarousel2 iframe, #tvcCarousel3 iframe, #generictvcCarousel1 iframe, #generictvcCarousel2 iframe, #generictvcCarousel3 iframe {width:260px; height:154px;}
+	#printAdCarousel img, #onlineAdCarousel img {width:90%;}
+	/*.mediaContainerWrapper  .radioBannerCarousel .owl-carousel {width:85%;}*/
+	 .radioBannerCarousel .tabContainer, .videoWrapper .langTabContainer {width:67%;}
+	 .audioplayer {width:95%; text-align:center; margin:0 auto;}
+	 .audioplayer-time-current {left:49%;}
+   .click-to-call{ display:none;}
+}
+
+@media only screen and (max-width:800px){
+.contentContainerWrapper{ box-sizing:border-box; padding:0 5px;}
+
+.headerText{box-sizing:border-box; padding:17px 15px 24px;}
+.headerText h1{2em;}
+.categoryConatiner{ box-sizing:border-box; width:100%;}
+.calculatorContainer{ box-sizing:border-box; padding:7px; width:100%;}
+.categoryTypeConatiner{padding-bottom:5px; width:100%;}
+.categoryTypeConatiner input{box-sizing:border-box; font-size:1.5em; color:#212165; min-height:30px; width:25%;}
+.categoryTypeConatiner .slderBox{ display:block; margin:16px 31px 0 0; width:30%;}
+.categoryTypeConatiner label { width:33%; font-size:1.5em;}
+.categoryTypeConatiner .slderBox .sliderBar{ border-radius:3px; width:100%;}
+.categoryTypeConatiner .slderBox .sliderBar .ui-widget-content{ width:100%;}
+.clculator{ box-sizing:border-box;}
+.offerConatiner{ box-sizing:border-box; /*padding:0 15px 15px 15px;*/ width:100%}
+.offerConatiner .cashBack{ box-sizing:border-box;/* padding:20px 0 0 0;*/ width:100%;}
+.offerConatiner .cashBack h4{ padding: 0 0 10px 0;}
+.offerConatiner .cashBack input{font-size:1.5em; margin-bottom:5px}
+.offerConatiner .getTickt{box-sizing:border-box; padding:20px 0 0 20px; width:100%;}
+.totalSpend{ box-sizing:border-box; width:100%;}
+.offerwrap, .offerConatiner .offer{ box-sizing:border-box;width:100%}
+.totalSpend label, .offerConatiner .cashBack label{ text-align:left;}
+.totalSpend label{box-sizing:border-box; width:100%;}
+.totalSpend label input, .offerConatiner .cashBack label input{ float:right;}
+.offerConatiner .cashBack label input{height:20px;}
+
+
+/*Added on 07/11/2014*/
+.banner3{ padding-top:0;}
+.banner3 img{ padding-top:26px; width:47%}
+.banner3 .img3{ padding-top:20px;}
+.banner3 .img2{ width:45%}
+.banner3 img.fullImg {width:100%!important;}
+
+/*Added on 04.05.2015*/
+.mainContainerWrapper{ box-sizing:border-box;}
+.contentContainerWrapper .contentContainer{ padding:5px;}
+.knwmoreLink{ top:160px}
+.aboutBT .innerBannerImg img{width:182px;}
+.productList, .offersContent .detailContentainer, .topBanner, .contentContainer{ float:left; box-sizing:border-box; width:100%;}
+.productList li{ padding:0;}
+.productList li a span, .productList li a:hover span, .productList li.tabSelected a span{ background-size:85% auto;}
+.carLoanBT .innerBannerImg img{width:355px}
+.supportLinkWrapper{ box-sizing:border-box;}
+.txtStyle, .txtStyleBold{font-size:2.8em;}
+.creditBT .innerBannerText{ width:54%}
+.articlesBt .innerBannerImg img{ width:240px;}
+.articlesBt .txtStyle, .txtStyleBold{ width:271px;}
+.offersContent .contentContainer, .offersContent .innerContent{ box-sizing:border-box;}
+.offersContent .detailContentainer .offerListItem{ box-sizing:border-box;}
+.offersContent .detailContentainer{ width:100% !important}
+.makeStartWrapper{ background-size: cover;}
+.makeStartWrapper .makeStart ul{ width:64%; margin:0 auto;}
+.makeStartWrapper .makeStart ul li{ padding:0;}
+/*.makeStartWrapper .makeStart ul li.lastLi{padding:0;}
+.makeStart ul li.banIco1 span, .makeStart ul li.banIco2 span, .makeStart ul li.banIco3 span, .makeStart ul li.banIco1:hover span, .makeStart ul li.banIco2:hover span, .makeStart ul li.banIco3:hover span{ background-size:50% auto;}*/
+/*.makeStartWrapper .makeStart ul li span, .makeStartWrapper .makeStart ul li span:hover{ background-size:90% auto;}
+.withLhs .innerContent{ padding:10px}
+.rateBox, .bottomBanner{ box-sizing:border-box;}
+.rateBox .rBox1, .rateBox .rBox2{box-sizing:border-box; margin:0; width:50%;}
+.rateBox .rating li{margin:0; width:7%;}
+.innerContent p, .innerContent ul li{ float:left;}
+.innerContent p{ width:100%;}
+.txtStyleSlim{font-size:2.8em;}
+.innerContent ul.liststyle li{ width:100%;}
+.videotab{ width:100%;}
+.innerContent .videoTitle{ left:49px;}
+.radioBannerCarousel .tabContainer, .videoWrapper .langTabContainer{ width:100%;}
+/*.innerContent ul li{ padding:13px 19px 9px 0;}*/
+/*.owl-buttons div.owl-prev{ left:-25px}
+.owl-buttons div.owl-next{right:-40px;}
+.topBanner .innerBannerText{ box-sizing:border-box; width:60%; float:left;}
+.topBanner .txtStyle, .topBanner .txtStyleBold{ font-size:2.6em;}
+.topBanner .innerBannerImg{ box-sizing:border-box; width:40%; float:left;}
+.topBanner .innerBannerImg img{ width:100%;}
+.offersContent .innerContent{ box-sizing:border-box;}*/
+/*.contentContainer .innerContent .owl-controls{ display:block !important;}*/
+/*.offersContent .owl-buttons div.owl-next{right:-2px !important;}
+.offersContent .owl-buttons div.owl-prev{ left:0 !important;}*/
+#productOwlCarousel .owl-buttons div.owl-prev{left:-6px; top:59px}
+#productOwlCarousel .owl-buttons div.owl-next{ right:-6px; top:59px}
+/*End Added*/
+
+}
+*@media only screen and (max-width:640px){
+.categoryConatiner{ display:none;}
+.categoryTypeConatiner { box-sizing:border-box; padding-bottom:20px; width:100%;}
+.categoryTypeConatiner .slderBox{ display:none;}
+.calculatorContainer{ padding:7px;}
+.clculator{ box-sizing:border-box; padding-bottom:20px;}
+.categoryTypeConatiner label{box-sizing:border-box; width:100%;}
+.categoryTypeConatiner input{box-sizing:border-box; margin-left:49px; min-height:25px; font-size:1.5em; width:80%;}
+.offerConatiner .cashBack{ box-sizing:border-box; padding:20px; width:100%;}
+.offerConatiner .cashBack .offer{ box-sizing:border-box; width:100%;}
+.offerConatiner .getTickt{box-sizing:border-box; float:left; padding:20px 0; width:299px;}
+.offerConatiner .getTickt p{padding-bottom:20px;}
+.totalSpend label, .offerConatiner .cashBack label{ text-align:left;}
+.totalSpend label input, .offerConatiner .cashBack label input{ float:right; margin:0 auto; width:158px;}
+	.banner3 img.fullImg {width:100%!important;}
+   .click-to-call{ display:none;}
+}
+
+/*Added on 04.05.2015*/
+@media only screen and (max-width:400px){
+.productList li{ padding:0; width:25% !important;}
+.aboutBT .innerBannerImg img{width:182px;}
+.productList li a span, .productList li a:hover span, .productList li.tabSelected a span{ background-size:85% auto;}
+.carLoanBT .innerBannerImg img{padding:59px 0 0; width:205px}
+.supportLink ul li span{padding:0 0 18px 25px;}
+.supportLink ul li a{font-size:1.4em; padding-left:3px}
+.txtStyle, .txtStyleBold{font-size:2.1em;}
+.creditBT .innerBannerText{ width:40%}
+.creditBT .innerBannerImg img{ width:140px;}
+.articlesBt .innerBannerText{ width:54%;}
+.articlesBt .innerBannerImg img{ width:155px;}
+.articlesBt .txtStyle, .txtStyleBold{ width:250px;}
+.aboutBT .innerBannerText{ width:58%;}
+.aboutBT .txtStyle, .aboutBT .txtStyleBold, .aboutBT .txtStyleSlim{ font-size:2.2em;}
+.makeStartWrapper .makeStart ul{ width:100%;}
+.makeStartWrapper .makeStart ul li{width:120px;}
+.makeStartWrapper .makeStart ul li span, .makeStartWrapper .makeStart ul li span:hover{ background-size:90% auto;}
+}
+@media only screen and (width:375px){
+.makeStartWrapper .makeStart ul li a{ width: auto;}
+.makeStartWrapper .makeStart ul li span, .makeStartWrapper .makeStart ul li span:hover{ background-size:90% auto; padding:108px 0 0 0; height:auto; margin:0;}
+
+.makeStartWrapper .makeStart ul{ width:300px; margin:0 auto;}
+
+.makeStart ul{ box-sizing:border-box; width:100%;}
+.makeStart ul li{width:100px;height:100px;padding-right:28px}
+.makeStart ul li.banIco1 span, .makeStart ul li.banIco2 span, .makeStart ul li.banIco3 span{ background-size:100%;}
+.makeStart ul li.banIco1:hover span, .makeStart ul li.banIco2:hover span, .makeStart ul li.banIco3:hover span{background-size:100%;}
+.makeStart ul li.lastLi{ padding-right:0;}
+
+.supportLink ul{ width:100%;}
+.supportLink ul li { font-size:0.8em; padding:0; }
+.supportLink ul li span{ padding:0 0 20px 28px}
+.supportLink ul li.ftrIco1{width:34%;}
+.supportLink ul li.ftrIco2{ width:24%;}
+.supportLink ul li.ftrIco3{ width:42%;}
+.fListBox{ width:50%;}
+.topBanner{box-sizing:border-box; width:100%;}
+.productList { box-sizing:border-box;}*/
+/*.innerContent ul li{ padding:0 20px 15px 0;}*/
+/*.innerContent ul li#tab3{ padding:0;}
+.makeStartWrapper .makeStart ul li span, .makeStartWrapper .makeStart ul li span:hover, .makeStartWrapper .makeStart ul li:hover{ background-size:cover; height:100px; width:100px;}
+#productOwlCarousel .owl-buttons div.owl-prev{left:-6px;}
+#productOwlCarousel .owl-buttons div.owl-next{ right:-6px;}
+.productCarousel .owl-buttons div.owl-prev{ left:-26px;}
+
+.offersContent .offerListLeft img{ width:95%}
+
+.owl-buttons div.owl-prev{ left:-20px}
+.owl-buttons div.owl-next{right:-30px;}
+.productList{box-sizing:border-box; float:left;}
+..productList li{ width:25%;}
+.knwmoreLink{ top:120px}
+.fListBox{ font-size:1.2em; padding-right:5px; box-sizing:border-box;}
+}
+
+.productList li a span, .ico1:hover span{ background-size:99% auto !important; width:80%;}
+.productList li{ margin:0; padding:0;}
+*/
+
+
+/*.innerBannerText{ font-size:0.7em; width:54%; }
+.txtStyle, .txtStyleBold{ font-size:4em;}
+.innerBannerImg img.imgCredit { width:100%}
+.innerBannerImg{ width:40%;}
+.creditBT{ min-height:188px;}*/
+}
+/*End Added*/
+
+
+@media only screen and (max-width:360px){
+.mainContainer{ width:100%;}
+.calculatorContainer{ box-sizing:border-box;}
+.categoryTypeConatiner label{ font-size:1.6em;}
+.categoryTypeConatiner input{ width:80%;}
+.offerConatiner .cashBack h4.freeTckt{ width:100%;}
+.totalSpend p{ padding-bottom:10px;}
+.totalSpend label, .offerConatiner .cashBack label{ text-align:center;}
+.totalSpend label input, .offerConatiner .cashBack label input{ float:none; margin:10px 0 auto;}
+.banner3 img.fullImg {width:100%!important;}
+/*Added on 04.05.2015*/
+/*.makeStartWrapper{ background-size:cover; padding-bottom:35px;}
+.supportLink ul, .makeStart ul li{ padding-right:29px; box-sizing:border-box;}
+.supportLink ul li{width:30%; font-size:1em;}
+.fListBox{ width:100%}
+.innerBannerText{ font-size:0.7em; width:60%;}
+.txtStyle, .txtStyleBold{ font-size:3.2em;}
+.productList li{ width:31%;}
+.productList li a span, .productList li a:hover span, .productList li.tabSelected a span{ background-size:100% auto; width:80%;}
+.productList{ box-sizing:border-box; float:left;}
+.innerContent ul li{ margin:0; padding:0; width:25%;}
+.supportLink ul, .makeStart ul li{ padding:0;}
+.supportLink ul li.ftrIco1{ width:32%;}
+.innerBannerImg{ width:30%;}*/
+/*.carLoanBT .innerBannerImg img{ width:185px}
+.productList li a span, .productList li a:hover span, .productList li.tabSelected a span{background-size:90% auto; height:100px; width:100px;}
+*/
+.supportLink ul li a{ font-size:1.1em;}
+.aboutBT .innerBannerImg img{ width:160px;}
+.creditBT .innerBannerImg img{ width:100px;}
+.makeStartWrapper .makeStart ul li{ width:77px; margin: 0 auto; text-align: center;}
+.makeStartWrapper .makeStart ul li span, .makeStartWrapper .makeStart ul li span:hover{background-size:90% auto;}
+}
+/*** Added on 14/10/14 ***/
+.contactuslanding {
+ width: 100%;
+ height: 100%;
+}
+
+.contactuslanding img {
+  width: 100%;
+  height: auto
+}
+
+/*** /Added on 14/10/14 ***/
+@media only screen and (max-width:480px){
+.mediaCenterMenu ul li{font-size: 1.2em; width:auto}
+/*Added on 04.05.2015*/
+/*.innerContent ul li{padding:10px; margin-right:5px;}*/
+/*Added on 04.05.2015*/
+.productList li{ width:20%;}
+.makeStartWrapper .makeStart ul{ width:90%;}
+.makeStartWrapper .makeStart ul li span, .makeStartWrapper .makeStart ul li span:hover{background-size:92% auto;}
+}
+
+
+
+/*** /Added on 14/10/14 ***/
+
+/*Ratings modified by TCIT */
+
+.stat {margin:1em;}
+.stat label {font-weight: bold;}
+
+
+.ui-rater>span {vertical-align:top;}
+.ui-rater-starsOff, .ui-rater-starsOn {display:inline-block; height:28px; background:url(http://www.simplylife.ae/systemrs/images/starsnew.png) repeat-x 0 0px;}
+.ui-rater-starsOn {display:block; max-width:145px; top:0; background-position: 0 -28px;}
+.ui-rater-starsHover {background-position: 0 -28px!important;}
+
+/* Form Radio Button  and lable alignment modified by TCIT */
+
+.contactTypeRadio label{margin-top: -20px;width: 1%;padding-right:10px;padding-left:30px;}
+.contactTypeRadio {padding-top:5px;}
+
+
+}

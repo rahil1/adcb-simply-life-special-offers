@@ -1,0 +1,267 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+	padding: 0;
+	margin: 0 auto;
+	font-family:"museo_sans300";
+}
+
+.accordion-container {
+  min-height: 0;
+  display: inline-block;
+  position: relative;
+  max-width: 740px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+* {
+  font-family:"museo_sans300";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+#accordion input {
+  display: none;
+}
+
+#accordion label {
+  background: #f1f1f1;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 3px;
+  padding: 8px 23px;
+  z-index: 20;
+  color: #212165;
+}
+
+#accordion label.btn {
+  text-align: center;
+  color: #fff;
+  text-decoration: none;
+  background: #f1cb10;
+  position: relative;
+  top: 0;
+  right: 0;
+  height: 34px;
+  font-size: 20px;
+  margin: 0;
+}
+
+#accordion label:hover {
+  background: #ccc;
+}
+
+#accordion input:checked + label {
+  background: #f1f1f1;
+  color: #212165;
+  margin-bottom: 0;
+}
+
+#accordion article {
+  background: #fff;
+  height: 0px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+#accordion article p {
+  /*padding: 1em;*/
+}
+
+#accordion input:checked article {}
+
+#accordion input:checked ~ article {
+  height: auto;
+  margin-bottom: .125em;
+}
+
+/* OFFERS */
+
+.offerListItem {
+	padding: 25px 0;
+	min-height: 170px;
+}
+
+.offerListLeft {
+	width: 40%;
+	float: left;
+}
+.offerListLeft img {
+	width: 162px;
+	height: 118px;
+	border: 2px solid #f1f1f1;
+}
+.offerListRight {
+	width: 60%;
+	float: left;
+	font-size: 14px;
+	text-align: left;
+}
+h1.offer {
+	color: #212165;
+	font-size: 32px;
+	font-weight: 200;
+	margin-bottom: 14px;
+	margin-top: 50px;
+}
+h2.offer {
+	color: #212165;
+	font-size: 20px;
+	font-weight: 200;
+	margin-bottom: 20px;
+}
+.offercopy {
+	color: #000;
+	font-size: 12px;
+}
+.offertc {
+	color: #777777;
+}
+.offermore {
+	height: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+.offermore a {
+	color: #212165;
+	position: relative;
+	text-decoration: none;
+}
+.rightarrow {
+	border: 4px solid;
+	border-color: transparent transparent transparent #2d2d6d ;
+	position: absolute;
+	top: 50%;
+	left: 80px;
+	margin-top: -3px;
+	width: 0;
+	height: 0;
+	display: block;
+	z-index: 2;
+}
+.clearfix {
+  clear: both;
+}
+hr.offer {
+	border: 1px solid #f1f1f1;
+}
+.black_overlay{
+    display: none;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 2000px;
+    background-color: black;
+    z-index:1001;
+    -moz-opacity: 0.6;
+    opacity:.60;
+    filter: alpha(opacity=60);
+}
+.popup_content {
+    display: none;
+    position: absolute;
+    /*top: 25%;*/
+    width: 100%;
+    /*height: 100%;*/
+		padding: 43px 50px;
+    background-color: white;
+    z-index:1002;
+    overflow: auto;
+}
+
+#popup_offer_copy {
+	overflow: hidden;
+	padding-bottom: 15px;
+}
+
+table h1.offer {
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+table img {
+	float: right;
+}
+#dialog h2.offer { color: #212165; font-size: 15px; font-weight: 200; margin-bottom: 10px; }
+.offerDetails { border-top: 2px solid #cbcbcb; padding-top: 20px; clear: both; margin-top: 14px; }
+.detailsLeft { border-top: 2px solid #cbcbcb; padding-top: 30px; float: left; width: 100%;}
+.detailsRight { float: left; }
+.poweredBy { float: right; }
+ul { margin-left: 17px; }
+li { list-style-image: url("../img/icon-arrow.gif");}
+li.detail {  list-style-image: url("../img/icon-arrow.gif"); margin-left: 15px; margin-bottom: 20px; font-size: 11px;}
+li.detail strong { font-weight: 900;}
+#popup_offer_validity {font-size: 11px;}
+.close-btn a { position: absolute; right: 0; top: 0; text-align: center; width: 40px; height: 40px; color: #fff; font-size: 30px; padding: 4px; text-decoration: none; background: #f1cb10;}
+.spacer20 { height: 20px;}
+.modal-content { margin: 55px;}
+#popup_offer_terms { margin-bottom: 35px;}
+:focus{ outline: none;}
+.disabled { color: #cdcdcd; cursor: not-allowed;}
+
+/* Accordion */
+.ui-icon { background-image: url(../img/ui-icons.png) !important;}
+.ui-accordion .ui-accordion-header { background-color: #f1f1f1; margin: 4px 0 0 0; padding: 9px 7px 8px 24px; font-family:"museo_sans500";}
+.ui-accordion .ui-accordion-header .ui-accordion-header-icon { position: absolute; left: auto; right: .5em !important; margin-top: -8px; }
+.ui-state-default { background: #fff;}
+.ui-widget-content { border: none; font-size: 0.9em; }
+.ui-corner-all { border: none; border-radius: 0;}
+.icon-box { position: absolute; margin: 4px 0 0 0; top: -4px; left: auto; right: 0; background-color: #efcc12; width: 36px; height: 36px;}
+.accordion-expand-holder { right: 0px; text-align: right; margin: 15px 0 15px 0;}
+.accordion-expand-holder a { color: #212165; padding-top: 10px; padding-bottom: 10px; margin-top: -4px; padding-left: 20px; text-decoration: none; font-size: 1.4em;}
+.accordion-expand-holder a:active { color: #000;}
+.accordion-expand-holder .icon-box { margin-left: 10px; display: inline-block; position: inherit; padding-top:-8px; right: 0px;}
+.accordion-expand-holder .icon-box .ui-icon { margin-left: 10px; margin-top: 10px;}
+
+/* Modal Dialog Box */
+.ui-widget-overlay { background: #000; opacity: 0.7;}
+.ui-widget-header { background: #fff;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default { background: #efcc12; font-weight: normal; color: #555555;}
+.ui-dialog { padding: 0;}
+.ui-dialog-titlebar-close { visibility: hidden;}
+.ui-dialog .ui-dialog-title { margin: 0;}
+.ui-dialog .ui-dialog-titlebar { padding: 0;}
+.ui-dialog .ui-dialog-content { padding: 0;}
+.offerTerms { clear: both; float: left; margin-top: 32px;}
+.termDetails { font-weight: bold; font-size: 11px;}
+.tnc-small-text { font-size: 10px;}
+.offersContent .contentContainer,.offersContent .innerContent{ width:100%;}
+.offersContent .innerContent{ padding-top:44px;}
+#productOwlCarousel .item span.offerImage{ display:block; width:128px; height:128px;}
+.offersContent #productOwlCarousel .item{ position:relative;}
+#productOwlCarousel .item span.btmarrow{border:4px solid; border-color:#2d2d6d transparent transparent transparent ; position:absolute; left:50%; bottom:-12px; margin-left:-2px width:0; height:0; display:none; z-index:2;}
+#productOwlCarousel .item.active span.btmarrow{ display:block;}
+#productOwlCarousel #entertainment span.offerImage{ background:url(../img/entertainment.png) no-repeat 0 0;}
+#productOwlCarousel #dining span.offerImage{ background:url(../img/dining.png) no-repeat 0 0;}
+#productOwlCarousel #jewellery span.offerImage{ background:url(../img/jewellery.png) no-repeat 0 0;}
+#productOwlCarousel #utilityBills span.offerImage{ background:url(../img/latest-offers.png) no-repeat 0 0;}
+#productOwlCarousel #travel span.offerImage{ background:url(../img/travel.png) no-repeat 0 0;}
+#productOwlCarousel #zeroInterestPlan span.offerImage{ background:url(../img/zero-interest-plan.png) no-repeat 0 0;}
+#productOwlCarousel #healthNwellness span.offerImage{ background:url(../img/health-wellness.png) no-repeat 0 0;}
+#productOwlCarousel #shopping span.offerImage{ background:url(../img/shopping.png) no-repeat 0 0;}
+
+
+#productOwlCarousel #entertainment.active span.offerImage{ background:url(../img/entertainment-active.png) no-repeat 0 0;}
+#productOwlCarousel #dining.active span.offerImage{ background:url(../img/dining-active.png) no-repeat 0 0;}
+#productOwlCarousel #jewellery.active span.offerImage{ background:url(../img/jewellery-active.png) no-repeat 0 0;}
+#productOwlCarousel #utilityBills.active span.offerImage{ background:url(../img/latest-offers-active.png) no-repeat 0 0;}
+#productOwlCarousel #travel.active span.offerImage{ background:url(../img/travel-active.png) no-repeat 0 0;}
+#productOwlCarousel #zeroInterestPlan.active span.offerImage{ background:url(../img/zero-interest-plan-active.png) no-repeat 0 0;}
+#productOwlCarousel #healthNwellness.active span.offerImage{ background:url(../img/health-wellness-active.png) no-repeat 0 0;}
+#productOwlCarousel #shopping.active span.offerImage{ background:url(../img/shopping-active.png) no-repeat 0 0;}
+
+
+@media only screen and (max-width: 320px) {
+	h2.offer {
+		margin-bottom: 0px;
+	}
+	.modal-content { margin: 10px;}
+	table {padding-top: 40px;}
+	h1.offer {padding-top: 10px; font-size: 22px;}
+	.popupHeaderImage {width: 100px; height: auto;}
+}
